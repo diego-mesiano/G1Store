@@ -1,0 +1,12 @@
+
+#carrocel{
+    height: calc(100vh - 56px);
+}
+#destaques-container{
+    display: flex;
+    justify-content: space-around;
+    img{
+        max-width: 300px;
+    }
+    
+}
