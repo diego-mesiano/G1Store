@@ -1,12 +1,13 @@
 
 #carrocel{
-    height: calc(100vh - 56px);
+    height: calc(40vh);
 }
+
 #destaques-container{
     display: flex;
     justify-content: space-around;
     img{
         max-width: 300px;
     }
-    
 }
+
