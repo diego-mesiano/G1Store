@@ -4,7 +4,7 @@ function Main() {
     return (
         <>
             <main>
-                <h1>Corpo da página</h1>
+                <h1>Pagina principal</h1>
             </main>
         </>
     );
