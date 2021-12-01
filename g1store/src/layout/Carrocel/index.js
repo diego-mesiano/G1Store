@@ -13,6 +13,7 @@ function Carrocel() {
                         id="carrocel"
                         className="d-block w-100"
                         src="https://static.vecteezy.com/ti/vetor-gratis/p1/2303937-abstrato-cinza-fundo-com-linhas-onduladas-vetor.jpg"
+                        alt="imagem de fundo do carrocel"
                     />
                     <Carousel.Caption id="texto-carrocel">
                         <h2>Produtos em Destaque</h2>
