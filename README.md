@@ -10,4 +10,4 @@ https://github.com/resyakKire/G1Store_back-end
 **Repositorio front-end:**  
 https://github.com/diego-mesiano/G1Store
 
-**Vercel:** 
+**Vercel:** https://g1-store.vercel.app/
