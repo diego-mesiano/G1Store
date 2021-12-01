@@ -1,11 +1,10 @@
+import Header from '../../layout/Header/Header';
 import './style.scss';
 
 function Main() {
     return (
         <>
-            <main>
-                <h1>Pagina principal</h1>
-            </main>
+            <Header/>
         </>
     );
 }
