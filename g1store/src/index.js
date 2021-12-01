@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import Header from './pages/Header';
+import Header from './layout/Header';
 import Main from './pages/Main'
-import Footer from './pages/Footer'
+import Footer from './layout/Footer'
 
 
 ReactDOM.render(
