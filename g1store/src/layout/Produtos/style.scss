@@ -1,0 +1,38 @@
+.titulo-cards{
+    text-align: right;
+}
+
+#sessao-produtos{
+    display: flex;
+    #menu-categorias{
+        display:flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: baseline;
+    }
+    
+    #corpo-produtos{
+        
+        
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card{
+            background-color: white;
+            border-radius: 20px;
+            margin: 10px;
+            .img-card{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                max-height: 200px;
+                
+            }
+            .botao-card{
+
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+}
+

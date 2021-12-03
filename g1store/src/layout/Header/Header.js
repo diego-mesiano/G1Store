@@ -1,12 +1,13 @@
 import './style.scss';
 import { Navbar, Nav, Container } from 'react-bootstrap'
+import logo from '../../assets/img/logo.png'
 
 function Header() {
   return (
     <>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">G1.Store</Navbar.Brand>
+          <Navbar.Brand href="#"><img src="" alt="Logo"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" >
             <Nav
