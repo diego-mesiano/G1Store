@@ -2,9 +2,9 @@
     {
         "id": 1,
         "nome": "Notebook",
-        "preco": "3000.00",
+        "preco": "60000.00",
         "descricao": "Computador portátil",
-        "imagem": "https://www.showmetech.com.br/wp-content/uploads//2020/11/maxresdefault-1.jpg",
+        "imagem": "~/src/assets/img/asus-zephyrus.png",
         "categoria": {
             "nome": "Eletrônicos"
         }
