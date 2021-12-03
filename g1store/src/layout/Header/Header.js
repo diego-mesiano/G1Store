@@ -5,9 +5,9 @@ import logo from '../../assets/img/logo.png'
 function Header() {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" fixed="top">
         <Container fluid>
-          <Navbar.Brand href="#"><img src="../img/G1Store004.png" alt="Logo"/></Navbar.Brand>
+          <Navbar.Brand href="#"><img className="logo" src={logo} alt="Logo" width="150"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" >
             <Nav

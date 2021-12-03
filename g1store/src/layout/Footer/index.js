@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <h1><img src="" alt="Logo"/></h1>
+        <h1><img src={logo}alt="Logo" width="150"/></h1>
       </footer>
     </>
   );
