@@ -7,7 +7,7 @@ function Header() {
     <>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#"><img src="../img/G1Store004.png" alt="Logo"/></Navbar.Brand>
+          <Navbar.Brand href="#"><img src="" alt="Logo"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" >
             <Nav
