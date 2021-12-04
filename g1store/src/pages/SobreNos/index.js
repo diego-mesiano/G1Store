@@ -1,19 +1,17 @@
 import Header from '../../layout/Header/Header';
-import Carrocel from '../../layout/Carrocel';
-import Produtos from '../../layout/ProdutosGerais';
+
 import Footer from '../../layout/Footer'
 import './style.scss';
 
 
-function Main() {
+function SobreNos() {
     return (
         <>
             <Header/>
-            <Carrocel/>
-            <Produtos/>
+            <SobreNosMain/>
             <Footer/>
         </>
     );
 }
 
-export default Main;
+export default SobreNos;

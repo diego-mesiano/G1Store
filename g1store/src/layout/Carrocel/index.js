@@ -1,23 +1,23 @@
 import './style.scss';
 import { Carousel } from 'react-bootstrap';
-import {useState, useEffect} from 'react';
+/*import {useState, useEffect} from 'react';*/
 import jsonExemplo from './jsonExemplo.json';
 
 
 
 function Carrocel() {
     
-    const [urlImg, setUrlImg] = useState("");
+    /*const [urlImg, setUrlImg] = useState("");
     useEffect(() => {
         setUrlImg(urlImg);
-      });
+      });*/
 
     
     const gera3Destaques = (inicio, fim) => {
         
         return (
             <>
-            <h2>Produtos em Destaque</h2>
+            <h2 id="titulo carrocel">Produtos em Destaque</h2>
             <div id="destaques-container">
             {   
                 jsonExemplo.slice(inicio, fim).map((jsonExemplo) => {
@@ -26,7 +26,7 @@ function Carrocel() {
                         <>  
                             
                             <ul key={jsonExemplo.id} value={jsonExemplo.id}>
-                                <img src={urlImg} alt="" />
+                                <img src={jsonExemplo.imagem} alt="" />
                                 <li><h3>{jsonExemplo.nome}</h3></li>
                                 <li><h6>{jsonExemplo.preco}</h6></li>
                                 <li>ou 10x R${jsonExemplo.preco / 10},00</li>

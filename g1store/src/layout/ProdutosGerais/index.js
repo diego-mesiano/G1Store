@@ -1,9 +1,9 @@
 import './style.scss';
 import jsonCategoria from './categoriasExemplo.json'
 import jsonUltimos from './ultimosExemplo.json'
-import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Button, Card} from 'react-bootstrap'
 
-function Produtos() {
+function ProdutosGerais() {
   return (
     <>
       <section>
@@ -53,4 +53,4 @@ function Produtos() {
   );
 }
 
-export default Produtos;
+export default ProdutosGerais;

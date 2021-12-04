@@ -1,19 +1,17 @@
 import Header from '../../layout/Header/Header';
-import Carrocel from '../../layout/Carrocel';
-import Produtos from '../../layout/ProdutosGerais';
+import CarrinhoMain from '../../layout/CarrinhoMain/';
 import Footer from '../../layout/Footer'
 import './style.scss';
 
 
-function Main() {
+function Carrinho() {
     return (
         <>
             <Header/>
-            <Carrocel/>
-            <Produtos/>
+            <CarrinhoMain/>
             <Footer/>
         </>
     );
 }
 
-export default Main;
+export default Carrinho;
