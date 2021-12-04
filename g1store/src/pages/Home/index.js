@@ -1,4 +1,4 @@
-import Header from '../../layout/Header/Header';
+import Header from '../../layout/Header';
 import Carrocel from '../../layout/Carrocel';
 import ProdutosGerais from '../../layout/ProdutosGerais';
 import Footer from '../../layout/Footer'
@@ -6,7 +6,8 @@ import './style.scss';
 
 
 
-function Main() {
+const Home=()=> {
+    
     return (
         <>
             <Header/>
@@ -17,4 +18,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Home;
