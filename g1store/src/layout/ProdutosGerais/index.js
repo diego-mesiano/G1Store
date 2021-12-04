@@ -2,21 +2,24 @@ import './style.scss';
 import jsonCategoria from './categoriasExemplo.json'
 import jsonUltimos from './ultimosExemplo.json'
 import { Button, Card} from 'react-bootstrap'
+import React,{useState} from 'react';
 
 function ProdutosGerais() {
+  const [ categoria ] = useState(jsonCategoria);
+  const [todosProdutos] = useState(jsonUltimos);
   return (
     <>
       <section>
         <h2 className="titulo-cards">Ultimos produtos cadastrados</h2>
         <div id="sessao-produtos">
           <div id="menu-categorias">
-            <ul key={jsonCategoria.nome} >
+            <ul>
               {
-                jsonCategoria.map((jsonCategoria) => {
+                categoria.map((categoria) => {
                   return (
-                    <>
-                      <li><h3>{jsonCategoria.nome}</h3></li>
-                    </>
+                    
+                      <li key={categoria.nome}><h3>{categoria.nome}</h3></li>
+                    
                   )
                 })
               }
@@ -26,23 +29,27 @@ function ProdutosGerais() {
           <div id="corpo-produtos">
 
             {
-              jsonUltimos.map((jsonUltimos) => {
+              todosProdutos.map((todosProdutos) => {
                 return (
-                  <>
-                    <Card className="card" style={{ width: '15rem' }}>
-                      <Card.Img className="img-card" variant="top" src={jsonUltimos.imagem} />
-                      <Card.Body>
-                        <Card.Title>{jsonUltimos.nome}</Card.Title>
+                  
+                  
+                    <div key={todosProdutos.id} >
+                      
+                    <Card  className="card" style={{ width: '15rem' }}>
+                      <Card.Img  className="img-card" variant="top" src={todosProdutos.imagem} />
+                      <Card.Body  >
+                        <Card.Title >{todosProdutos.nome}</Card.Title>
                         <Card.Text>
-                          <p>R${jsonUltimos.preco} Ou 10x R${jsonUltimos.preco / 10},00</p>
-                          <p>{jsonUltimos.descricao.substr(0, 100)}...</p>
-
+                          R${todosProdutos.preco} Ou 10x R${todosProdutos.preco / 10},00<br/>
+                          {todosProdutos.descricao.substr(0, 100)}...
                         </Card.Text>
                       </Card.Body>
                       <Button className="botao-card" variant="primary">Ver</Button>
                       <Button className="botao-card" variant="primary">Add Carrinho</Button>
                     </Card>
-                  </>
+                    </div>
+                 
+                  
                 )
               })
             }

@@ -1,8 +1,9 @@
 import Header from '../../layout/Header/Header';
 import Carrocel from '../../layout/Carrocel';
-import Produtos from '../../layout/ProdutosGerais';
+import ProdutosGerais from '../../layout/ProdutosGerais';
 import Footer from '../../layout/Footer'
 import './style.scss';
+
 
 
 function Main() {
@@ -10,7 +11,7 @@ function Main() {
         <>
             <Header/>
             <Carrocel/>
-            <Produtos/>
+            <ProdutosGerais/>
             <Footer/>
         </>
     );

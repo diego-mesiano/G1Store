@@ -23,16 +23,15 @@ function Carrocel() {
                 jsonExemplo.slice(inicio, fim).map((jsonExemplo) => {
                     
                     return (
-                        <>  
-                            
-                            <ul key={jsonExemplo.id} value={jsonExemplo.id}>
+                         
+                            <ul key={jsonExemplo.id}>
                                 <img src={jsonExemplo.imagem} alt="" />
                                 <li><h3>{jsonExemplo.nome}</h3></li>
                                 <li><h6>{jsonExemplo.preco}</h6></li>
                                 <li>ou 10x R${jsonExemplo.preco / 10},00</li>
                             </ul>
 
-                        </>
+                        
                     )
                 })           
             }
