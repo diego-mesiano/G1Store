@@ -10,6 +10,7 @@ function ProdutosGerais() {
   const [todosProdutos] = useState(jsonUltimos);
   return (
     <>
+      <div id="ancora-produtos"/>
       <section>
         <h2 className="titulo-cards">Ultimos produtos cadastrados</h2>
         <div id="sessao-produtos">

@@ -10,8 +10,8 @@ function Carrocel() {
     /*const [urlImg, setUrlImg] = useState("");
     useEffect(() => {
         setUrlImg(urlImg);
-      });*/
-
+    });*/
+    
     
     const gera3Destaques = (inicio, fim) => {
         
@@ -23,8 +23,8 @@ function Carrocel() {
                 jsonExemplo.slice(inicio, fim).map((jsonExemplo) => {
                     
                     return (
-                         
-                            <ul key={jsonExemplo.id}>
+                        
+                        <ul key={jsonExemplo.id}>
                                 <img src={jsonExemplo.imagem} alt="" />
                                 <li><h3>{jsonExemplo.nome}</h3></li>
                                 <li><h6>{jsonExemplo.preco}</h6></li>
@@ -32,6 +32,7 @@ function Carrocel() {
                             </ul>
 
                         
+
                     )
                 })           
             }
@@ -42,6 +43,7 @@ function Carrocel() {
 
     return (
         <>
+            
             <Carousel variant="dark" id="carrocel">
                 <Carousel.Item interval={3000}>
 
@@ -56,6 +58,7 @@ function Carrocel() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
+                
                     <img
                         id="carrocel"
                         className="d-block w-100"

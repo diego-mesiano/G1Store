@@ -17,8 +17,8 @@ function Header() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Produtos</Nav.Link>
+              <Nav.Link href="#action">Home</Nav.Link>
+              <Nav.Link href="#ancora-produtos">Produtos</Nav.Link>
               <Nav.Link href="#action3">Carrinho</Nav.Link>
               <Nav.Link href="#action4">Sobre nós</Nav.Link>
             </Nav>
