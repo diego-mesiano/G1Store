@@ -16,11 +16,13 @@
         
         display:flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
         .card{
             background-color: white;
             border-radius: 20px;
-            margin: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
             .img-card{
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
