@@ -1,0 +1,38 @@
+[
+    {
+    "id": 1,
+    "nome": "Jeziel Oliveira de Paula",
+    "github": "https://github.com/Jeziel1Oliveira2",
+    "linkedin": "https://www.linkedin.com/in/jeziel-oliveira-de-paula-21b8211b3/"
+  },
+  {
+    "id": 2,
+    "nome": "Diego Messiano",
+    "github": "https://github.com/diego-mesiano/",
+    "linkedin": "https://www.linkedin.com/in/diego-mesiano-87b680213/"
+  },
+  {
+    "id": 3,
+    "nome": "Nicole Stefany",
+    "github": "",
+   "linkedin": ""
+  },
+  {
+    "id": 4,
+    "nome": "Gabriel Goak",
+    "github": "https://github.com/g-oak",
+    "linkedin": "https://www.linkedin.com/in/gabr1elcarvalho/"
+  },
+  {
+    "id": 5,
+    "nome": "Erik Kaiser",
+    "github": "https://github.com/resyakKire",
+    "linkedin": "https://www.linkedin.com/in/erik-kayser-b5228a212/"
+  },
+  {
+    "id": 6,
+    "nome": "Willian",
+    "github": "",
+    "linkedin": ""
+  }
+]

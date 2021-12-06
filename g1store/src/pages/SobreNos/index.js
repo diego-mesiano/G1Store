@@ -1,5 +1,5 @@
 import Header from '../../layout/Header/Header';
-
+import SobreNosMain from '../../layout/SobreNosMain';
 import Footer from '../../layout/Footer'
 import './style.scss';
 

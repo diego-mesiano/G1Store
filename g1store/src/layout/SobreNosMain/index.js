@@ -1,136 +1,33 @@
 import './style.scss';
-
+import integrantes from './integrantes.json';
 
 function SobreNosMain() {
   return (
-    
-//Primeira forma de fazer!
-
-
-    <div class="main">
-      <div class="titulo">
+    <div id = "main">
+      <div id = "titulo">
         <h1>
-          Sobre nós
+          Sobre a equipe de desenvolvimendo
         </h1>
         <p>
-          Tesxtinho sobre nós
+          Esse foi o nosso primeiro projeto em grupo implementando as matérias de Back-end, Front-end e Infraesrutura em um único projeto.
+          Foi feito durante o Curso Dev
         </p>
       </div>
-      <div class="backEnd">
-        <h2>
-          Desenvolvedores Back-and
-        </h2>
-        <ol>
-          <li>
-            <h3>Nome da pessoa</h3>
-            <img src="">foto da Pessoa</img>
-            <button><link src="">GitHub</link></button>
-            <button><link src="">Email</link></button>
-            <button><link src="">Linkdin</link></button>
-          </li>
-          <li>
-            <h3>Nome da pessoa</h3>
-            <img src="">foto da Pessoa</img>
-            <button><link src="">GitHub</link></button>
-            <button><link src="">Email</link></button>
-            <button><link src="">Linkdin</link></button>
-          </li>
-          <li>
-            <h3>Nome da pessoa</h3>
-            <img src="">foto da Pessoa</img>
-            <button><link src="">GitHub</link></button>
-            <button><link src="">Email</link></button>
-            <button><link src="">Linkdin</link></button>
-          </li>
-        </ol>
-      </div>
-      <div>
-        <h2>
-          Desenvolvedores Front-end
-        </h2>
-        <ol>
-          <li>
-            <h3>Nome da pessoa</h3>
-            <img src="">foto da Pessoa</img>
-            <button><link src="">GitHub</link></button>
-            <button><link src="">Email</link></button>
-            <button><link src="">Linkdin</link></button>
-          </li>
-          <li>
-            <h3>Nome da pessoa</h3>
-            <img src="">foto da Pessoa</img>
-            <button><link src="">GitHub</link></button>
-            <button><link src="">Email</link></button>
-            <button><link src="">Linkdin</link></button>
-          </li>
-          <li>
-            <h3>Nome da pessoa</h3>
-            <img src="">foto da Pessoa</img>
-            <button><link src="">GitHub</link></button>
-            <button><link src="">Email</link></button>
-            <button><link src="">Linkdin</link></button>
-          </li>
-        </ol>
-      </div>
-
-     
-//Segunda forma que eu pensei!
-
-      <div class="main">
-        <div class="titulo">
-          <h1>
-            Sobre nós
-          </h1>
-          <p>
-            Textinho sobre nos
-          </p>
-          <div>
-            <ol>
-              <li>
-                <h3>Nome da pessoa</h3>
-                <img src="">foto da Pessoa</img>
-                <button><link src="">GitHub</link></button>
-                <button><link src="">Email</link></button>
-                <button><link src="">Linkdin</link></button>
-              </li>
-              <li>
-                <h3>Nome da pessoa</h3>
-                <img src="">foto da Pessoa</img>
-                <button><link src="">GitHub</link></button>
-                <button><link src="">Email</link></button>
-                <button><link src="">Linkdin</link></button>
-              </li>
-              <li>
-                <h3>Nome da pessoa</h3>
-                <img src="">foto da Pessoa</img>
-                <button><link src="">GitHub</link></button>
-                <button><link src="">Email</link></button>
-                <button><link src="">Linkdin</link></button>
-              </li>
-              <li>
-                <h3>Nome da pessoa</h3>
-                <img src="">foto da Pessoa</img>
-                <button><link src="">GitHub</link></button>
-                <button><link src="">Email</link></button>
-                <button><link src="">Linkdin</link></button>
-              </li>
-              <li>
-                <h3>Nome da pessoa</h3>
-                <img src="">foto da Pessoa</img>
-                <button><link src="">GitHub</link></button>
-                <button><link src="">Email</link></button>
-                <button><link src="">Linkdin</link></button>
-              </li>
-              <li>
-                <h3>Nome da pessoa</h3>
-                <img src="">foto da Pessoa</img>
-                <button><link src="">GitHub</link></button>
-                <button><link src="">Email</link></button>
-                <button><link src="">Linkdin</link></button>
-              </li>
-            </ol>
-          </div>
-        </div>
+      <div >
+        <ul id="sobrenos">
+          {
+            integrantes.map((integrantes) => {
+              return (
+                <li key={integrantes.id}>
+                  <h3>{integrantes.nome}</h3>
+                  <img src="">foto da Pessoa</img>
+                  <button><link src={integrantes.github}>GitHub</link></button>
+                  <button><link src={integrantes.linkedin}>Linkdin</link></button>
+                </li>
+              )
+            })
+          }
+        </ul>
       </div>
     </div>
   );
