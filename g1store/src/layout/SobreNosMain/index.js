@@ -3,6 +3,10 @@ import './style.scss';
 
 function SobreNosMain() {
   return (
+    
+//Primeira forma de fazer!
+
+
     <div class="main">
       <div class="titulo">
         <h1>
@@ -12,7 +16,6 @@ function SobreNosMain() {
           Tesxtinho sobre nós
         </p>
       </div>
-
       <div class="backEnd">
         <h2>
           Desenvolvedores Back-and
@@ -41,89 +44,94 @@ function SobreNosMain() {
           </li>
         </ol>
       </div>
-                <div>
-                  <h2>
-                    Desenvolvedores Front-end
-                  </h2>
-                  <ol>
-                    <li>
-                      <h3>Nome da pessoa</h3>
-                      <img src="">foto da Pessoa</img>
-                      <button><link src="">GitHub</link></button>
-                      <button><link src="">Email</link></button>
-                      <button><link src="">Linkdin</link></button>
-                    </li>
-                    <li>
-                      <h3>Nome da pessoa</h3>
-                      <img src="">foto da Pessoa</img>
-                      <button><link src="">GitHub</link></button>
-                      <button><link src="">Email</link></button>
-                      <button><link src="">Linkdin</link></button>
-                    </li>
-                    <li>
-                      <h3>Nome da pessoa</h3>
-                      <img src="">foto da Pessoa</img>
-                      <button><link src="">GitHub</link></button>
-                      <button><link src="">Email</link></button>
-                      <button><link src="">Linkdin</link></button>
-                    </li>
-                  </ol>
-                </div>
-                <div class="main">
-                  <div class="titulo">
-                    <h1>
-                      Sobre nós
-                    </h1>
-                    <p>
-                    </p>
-                    <div>
-                      <ol>
-                        <li>
-                          <h3>Nome da pessoa</h3>
-                          <img src="">foto da Pessoa</img>
-                          <button><link src="">GitHub</link></button>
-                          <button><link src="">Email</link></button>
-                          <button><link src="">Linkdin</link></button>
-                        </li>
-                        <li>
-                          <h3>Nome da pessoa</h3>
-                          <img src="">foto da Pessoa</img>
-                          <button><link src="">GitHub</link></button>
-                          <button><link src="">Email</link></button>
-                          <button><link src="">Linkdin</link></button>
-                        </li>
-                        <li>
-                          <h3>Nome da pessoa</h3>
-                          <img src="">foto da Pessoa</img>
-                          <button><link src="">GitHub</link></button>
-                          <button><link src="">Email</link></button>
-                          <button><link src="">Linkdin</link></button>
-                        </li>
-                        <li>
-                          <h3>Nome da pessoa</h3>
-                          <img src="">foto da Pessoa</img>
-                          <button><link src="">GitHub</link></button>
-                          <button><link src="">Email</link></button>
-                          <button><link src="">Linkdin</link></button>
-                        </li>
-                        <li>
-                          <h3>Nome da pessoa</h3>
-                          <img src="">foto da Pessoa</img>
-                          <button><link src="">GitHub</link></button>
-                          <button><link src="">Email</link></button>
-                          <button><link src="">Linkdin</link></button>
-                        </li>
-                        <li>
-                          <h3>Nome da pessoa</h3>
-                          <img src="">foto da Pessoa</img>
-                          <button><link src="">GitHub</link></button>
-                          <button><link src="">Email</link></button>
-                          <button><link src="">Linkdin</link></button>
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
+      <div>
+        <h2>
+          Desenvolvedores Front-end
+        </h2>
+        <ol>
+          <li>
+            <h3>Nome da pessoa</h3>
+            <img src="">foto da Pessoa</img>
+            <button><link src="">GitHub</link></button>
+            <button><link src="">Email</link></button>
+            <button><link src="">Linkdin</link></button>
+          </li>
+          <li>
+            <h3>Nome da pessoa</h3>
+            <img src="">foto da Pessoa</img>
+            <button><link src="">GitHub</link></button>
+            <button><link src="">Email</link></button>
+            <button><link src="">Linkdin</link></button>
+          </li>
+          <li>
+            <h3>Nome da pessoa</h3>
+            <img src="">foto da Pessoa</img>
+            <button><link src="">GitHub</link></button>
+            <button><link src="">Email</link></button>
+            <button><link src="">Linkdin</link></button>
+          </li>
+        </ol>
+      </div>
+
+     
+//Segunda forma que eu pensei!
+
+      <div class="main">
+        <div class="titulo">
+          <h1>
+            Sobre nós
+          </h1>
+          <p>
+            Textinho sobre nos
+          </p>
+          <div>
+            <ol>
+              <li>
+                <h3>Nome da pessoa</h3>
+                <img src="">foto da Pessoa</img>
+                <button><link src="">GitHub</link></button>
+                <button><link src="">Email</link></button>
+                <button><link src="">Linkdin</link></button>
+              </li>
+              <li>
+                <h3>Nome da pessoa</h3>
+                <img src="">foto da Pessoa</img>
+                <button><link src="">GitHub</link></button>
+                <button><link src="">Email</link></button>
+                <button><link src="">Linkdin</link></button>
+              </li>
+              <li>
+                <h3>Nome da pessoa</h3>
+                <img src="">foto da Pessoa</img>
+                <button><link src="">GitHub</link></button>
+                <button><link src="">Email</link></button>
+                <button><link src="">Linkdin</link></button>
+              </li>
+              <li>
+                <h3>Nome da pessoa</h3>
+                <img src="">foto da Pessoa</img>
+                <button><link src="">GitHub</link></button>
+                <button><link src="">Email</link></button>
+                <button><link src="">Linkdin</link></button>
+              </li>
+              <li>
+                <h3>Nome da pessoa</h3>
+                <img src="">foto da Pessoa</img>
+                <button><link src="">GitHub</link></button>
+                <button><link src="">Email</link></button>
+                <button><link src="">Linkdin</link></button>
+              </li>
+              <li>
+                <h3>Nome da pessoa</h3>
+                <img src="">foto da Pessoa</img>
+                <button><link src="">GitHub</link></button>
+                <button><link src="">Email</link></button>
+                <button><link src="">Linkdin</link></button>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
