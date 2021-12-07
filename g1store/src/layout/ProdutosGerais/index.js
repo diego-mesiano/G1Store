@@ -19,7 +19,7 @@ function ProdutosGerais() {
 
  function consumoApi(){
     apiProdutos
-    .get("http://g1store-env.eba-6ip9x9tb.us-east-1.elasticbeanstalk.com/produto")
+    .get("/produto")
       .then((response)=> setProdutos(response.data))
       .catch((err)=>{
         console.error("Erro:" + err);
