@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const apiProdutos = axios.create({
-    baseUrl: "http://g1store-env.eba-6ip9x9tb.us-east-1.elasticbeanstalk.com"
+    baseURL: "http://g1store-env-2.eba-j4xpiapi.us-east-1.elasticbeanstalk.com"
+    
 });
 
 export default apiProdutos;

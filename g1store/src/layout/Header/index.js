@@ -1,6 +1,7 @@
 import './style.scss';
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import logo from '../../assets/img/logo.png'
+import {Link} from 'react-router-dom';
 
 
 function Header() {
@@ -18,10 +19,10 @@ function Header() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link to={"/"}>Home</Nav.Link>
-              <Nav.Link to={"/produto"}>Produtos</Nav.Link>
-              <Nav.Link>Carrinho</Nav.Link>
-              <Nav.Link to={"/sobrenos"}>Sobre Nós</Nav.Link>
+              <Link to={"/"} className="nav-link">Home</Link>
+              <Link to={"/produto"} className="nav-link">Produtos</Link>
+              <Link to={"/"} className="nav-link">Carrinho</Link>
+              <Link to={"/sobrenos"} className="nav-link">Sobre Nós</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

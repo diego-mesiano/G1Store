@@ -1,29 +1,26 @@
 import './style.scss';
-import jsonCategoria from './categoriasExemplo.json'
-/*import jsonUltimos from './ultimosExemplo.json'*/
 import { Button, Card } from 'react-bootstrap'
 import React, { useState, useEffect} from 'react';
 import Nav from 'react-bootstrap/Nav';
 import apiProdutos from '../../services/apiProdutos'
 
 function ProdutosGerais() {
-  const [categoria] = useState(jsonCategoria);
-  /*const [todosProdutos] = useState(jsonUltimos);*/
-
+  const [categoria, setCategoria] = useState([]);
   const [produtos, setProdutos] = useState([]);
-  /*const [categoria, setCategoria] = useState({});*/
+
 
   useEffect(() => {
     consumoApi();
   }, [])
 
  function consumoApi(){
+   
     apiProdutos
-    .get("/produto")
+      .get('produto')
       .then((response)=> setProdutos(response.data))
       .catch((err)=>{
         console.error("Erro:" + err);
-      });
+    });
   }
  
   return (
