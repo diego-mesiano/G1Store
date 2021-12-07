@@ -1,49 +1,58 @@
 import './style.scss';
 import { Carousel } from 'react-bootstrap';
-/*import {useState, useEffect} from 'react';*/
-import jsonExemplo from './jsonExemplo.json';
+import { useState, useEffect } from 'react';
+import apiProdutos from '../../services/apiProdutos';
 
 
 
 function Carrocel() {
-    
-    /*const [urlImg, setUrlImg] = useState("");
+    const [produtos, setProdutos] = useState([]);
     useEffect(() => {
-        setUrlImg(urlImg);
-    });*/
-    
-    
+        async function consumoApi() {
+            try {
+                const produtos = await Promise.all(
+                    apiProdutos.get('produto'),
+                );
+                setProdutos(produtos.data);
+            } catch (err) {
+                console.error("Erro:" + err);
+            }
+        }
+        consumoApi();
+    }, []);
+
+
     const gera3Destaques = (inicio, fim) => {
-        
+        {console.log(produtos)}
         return (
             <>
-            <h2 id="titulo carrocel">Produtos em Destaque</h2>
-            <div id="destaques-container">
-            {   
-                jsonExemplo.slice(inicio, fim).map((jsonExemplo) => {
-                    
-                    return (
-                        
-                        <ul key={jsonExemplo.id}>
-                                <img src={jsonExemplo.imagem} alt="" />
-                                <li><h3>{jsonExemplo.nome}</h3></li>
-                                <li><h6>{jsonExemplo.preco}</h6></li>
-                                <li>ou 10x R${jsonExemplo.preco / 10},00</li>
-                            </ul>
+                <h2 id="titulo carrocel">Produtos em Destaque</h2>
+                <div id="destaques-container">
+                    {
+                        produtos.slice(inicio, fim).map((produtos) => {
 
-                        
+                            return (
 
-                    )
-                })           
-            }
-            </div>    
+                                <ul key={produtos.id}>
+                                    <img src={produtos.imagem} alt="" />
+                                    <li><h3>{produtos.nome}</h3></li>
+                                    <li><h6>{produtos.preco}</h6></li>
+                                    <li>ou 10x R${produtos.preco / 10},00</li>
+                                </ul>
+
+
+
+                            )
+                        })
+                    }
+                </div>
             </>
         )
     }
 
     return (
         <>
-            
+
             <Carousel variant="dark" id="carrocel">
                 <Carousel.Item interval={3000}>
 
@@ -58,7 +67,7 @@ function Carrocel() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
-                
+
                     <img
                         id="carrocel"
                         className="d-block w-100"
