@@ -2,14 +2,32 @@ import './style.scss';
 import jsonCategoria from './categoriasExemplo.json'
 import jsonUltimos from './ultimosExemplo.json'
 import { Button, Card } from 'react-bootstrap'
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import Nav from 'react-bootstrap/Nav';
+import apiProdutos from '../../services/apiProdutos'
 
 function ProdutosGerais() {
   const [categoria] = useState(jsonCategoria);
-  const [todosProdutos] = useState(jsonUltimos);
+  /*const [todosProdutos] = useState(jsonUltimos);*/
+
+  const [produtos, setProdutos] = useState([]);
+  /*const [categoria, setCategoria] = useState({});*/
+
+  useEffect(() => {
+    consumoApi();
+  }, [])
+
+ const consumoApi = async()=>{
+   try{
+     const response = await apiProdutos.get('/produto');
+     setProdutos(response.data);
+   }catch(error){
+
+   }
+ }
   return (
     <>
+      {console.log(produtos)}
       <div id="ancora-produtos"/>
       <section>
         <h2 className="titulo-cards">Ultimos produtos cadastrados</h2>
@@ -32,19 +50,19 @@ function ProdutosGerais() {
           <div id="corpo-produtos">
 
             {
-              todosProdutos.map((todosProdutos) => {
+              produtos.map(({produtos}) => {
                 return (
 
 
-                  <div key={todosProdutos.id} >
+                  <div key={produtos.id} >
 
                     <Card className="card" style={{ width: '15rem' }}>
-                      <Card.Img className="img-card" variant="top" src={todosProdutos.imagem} />
+                      <Card.Img className="img-card" variant="top" src={produtos.imagem} />
                       <Card.Body  >
-                        <Card.Title >{todosProdutos.nome}</Card.Title>
+                        <Card.Title >{produtos.nome}</Card.Title>
                         <Card.Text>
-                          R${todosProdutos.preco} Ou 10x R${todosProdutos.preco / 10},00<br />
-                          {todosProdutos.descricao.substr(0, 100)}...
+                          R${produtos.preco} Ou 10x R${produtos.preco / 10},00<br />
+                          {produtos.descricao.substr(0, 100)}...
                         </Card.Text>
                       </Card.Body>
                       <Button className="botao-card" variant="primary">Ver</Button>

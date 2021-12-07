@@ -19,7 +19,7 @@ function Header() {
               navbarScroll
             >
               <Nav.Link><Link to={"/"}>Home</Link></Nav.Link>
-              <Nav.Link><Link to={"/produtos"}>Produtos</Link></Nav.Link>
+              <Nav.Link><Link to={"/produto"}>Produtos</Link></Nav.Link>
               <Nav.Link>Carrinho</Nav.Link>
               <Nav.Link><Link to={"/sobrenos"}>Sobre Nós</Link></Nav.Link>
             </Nav>
@@ -31,3 +31,6 @@ function Header() {
 }
 
 export default Header;
+
+
+

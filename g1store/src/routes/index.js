@@ -9,7 +9,7 @@ const RouteList = () => (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/produto" element={<Produtos />} />
         <Route path="/sobrenos" element={<SobreNos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
