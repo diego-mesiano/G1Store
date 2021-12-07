@@ -1,6 +1,6 @@
 import './style.scss';
 import jsonCategoria from './categoriasExemplo.json'
-import jsonUltimos from './ultimosExemplo.json'
+/*import jsonUltimos from './ultimosExemplo.json'*/
 import { Button, Card } from 'react-bootstrap'
 import React, { useState, useEffect} from 'react';
 import Nav from 'react-bootstrap/Nav';
@@ -17,14 +17,15 @@ function ProdutosGerais() {
     consumoApi();
   }, [])
 
- const consumoApi = async()=>{
-   try{
-     const response = await apiProdutos.get('/produto');
-     setProdutos(response.data);
-   }catch(error){
-
-   }
- }
+ function consumoApi(){
+    apiProdutos
+    .get("http://g1store-env.eba-6ip9x9tb.us-east-1.elasticbeanstalk.com/produto")
+      .then((response)=> setProdutos(response.data))
+      .catch((err)=>{
+        console.error("Erro:" + err);
+      });
+  }
+ 
   return (
     <>
       {console.log(produtos)}
@@ -50,19 +51,19 @@ function ProdutosGerais() {
           <div id="corpo-produtos">
 
             {
-              produtos.map(({produtos}) => {
+              produtos.map(({id,imagem,nome,descricao,preco}) => {
                 return (
 
 
-                  <div key={produtos.id} >
+                  <div key={id} >
 
                     <Card className="card" style={{ width: '15rem' }}>
-                      <Card.Img className="img-card" variant="top" src={produtos.imagem} />
+                      <Card.Img className="img-card" variant="top" src={imagem} />
                       <Card.Body  >
-                        <Card.Title >{produtos.nome}</Card.Title>
+                        <Card.Title >{nome}</Card.Title>
                         <Card.Text>
-                          R${produtos.preco} Ou 10x R${produtos.preco / 10},00<br />
-                          {produtos.descricao.substr(0, 100)}...
+                          R${preco} Ou 10x R${preco / 10},00<br />
+                          {descricao}
                         </Card.Text>
                       </Card.Body>
                       <Button className="botao-card" variant="primary">Ver</Button>
