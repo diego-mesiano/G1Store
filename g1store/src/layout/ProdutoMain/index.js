@@ -11,7 +11,7 @@ function ProdutoMain() {
   const [produto, setProduto] = useState({});
   useEffect(() => {
     apiProdutos
-      .get(`/produto/${produtoId}`)
+      .get(`/produtos/${produtoId}`)
       .then((response) => setProduto(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);

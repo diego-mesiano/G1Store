@@ -14,8 +14,8 @@ function ProdutosGerais() {
       try {
         const [produtos, categoria] = await Promise.all(
           [
-            apiProdutos.get('produto'),
-            apiProdutos.get('produto/categorias')
+            apiProdutos.get('produtos'),
+            apiProdutos.get('produtos/categorias')
           ]
         );
         setProdutos(produtos.data);

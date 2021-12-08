@@ -9,7 +9,7 @@ function Carrocel() {
     const [produtos, setProdutos] = useState([]);
     useEffect(() => {
         apiProdutos
-          .get("/produto")
+          .get("/produtos")
           .then((response) => setProdutos(response.data))
           .catch((err) => {
             console.error("ops! ocorreu um erro" + err);
