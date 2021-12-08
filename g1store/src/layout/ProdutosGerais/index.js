@@ -71,9 +71,15 @@ return (
                         {descricao.substr(0,100)}...
                       </Card.Text>
                     </Card.Body>
+<<<<<<< HEAD
                     <div className="btn-group mb-2 mx-2 ">
                       <Button id="botao-card" className="btn btn-primary ">Ver</Button>
                       <Button id="botao-card" className="btn btn-primary ">Add Carrinho</Button>
+=======
+                    <div class="btn-group mb-2 mx-2 ">
+                      <Button className="botao-card" class="btn btn-info ">Ver</Button>
+                      <Button className="botao-card" class="btn btn-primary ">Add Carrinho</Button>
+>>>>>>> 4a66507c37b72ead80f08e5a0e69800b62ae3d5b
                     </div>
                   </Card>
                 </div>
