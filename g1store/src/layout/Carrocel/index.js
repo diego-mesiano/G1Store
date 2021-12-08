@@ -2,7 +2,6 @@ import './style.scss';
 import { Carousel } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import apiProdutos from '../../services/apiProdutos';
-import GeraCards from './GeraCards';
 
 
 
@@ -33,7 +32,7 @@ function Carrocel() {
                         alt="imagem de fundo do carrocel"
                     />
                     <Carousel.Caption id="texto-carrocel">
-                        <GeraCards inicio={0} fim={3} produtos={produtos}/>
+                        {/* <GeraCards inicio={0} fim={3} produtos={produtos}/> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
@@ -45,7 +44,7 @@ function Carrocel() {
                         alt="Second slide"
                     />
                     <Carousel.Caption >
-                    <GeraCards inicio={3} fim={6} produtos={produtos}/>
+                    {/* <GeraCards inicio={3} fim={6} produtos={produtos}/> */}
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
