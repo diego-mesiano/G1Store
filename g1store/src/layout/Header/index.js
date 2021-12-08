@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 function Header() {
   return (
     <>
-      <Navbar variant="primary" expand="lg" fixed="top" class="border-bottom border-success">
+      <Navbar variant="primary" expand="lg" fixed="top" className="border-bottom border-success">
         <Container fluid>
 
           {/* Logo */}
@@ -16,23 +16,21 @@ function Header() {
           {/* menu hamburguer */}
           <Navbar.Toggle aria-controls="navbarScroll" />
 
+
           {/* menu */}
           <Navbar.Collapse id="navbarScroll" >            
-            <Nav class="collapse navbar-collapse justify-content-end align-center" style={{ maxHeight: '100px' }} navbarScroll>
+            <Nav className="collapse navbar-collapse justify-content-end align-center" style={{ maxHeight: '100px' }} navbarScroll>
 
-              <Link class="fw-bolder text-decoration-none me-3 text-dark" to={"/"}>
+              <Link className="fw-bolder text-decoration-none me-3 text-dark" to={"/"}>
                 Home</Link>
-              <Link class="fw-bold text-decoration-none me-3 text-dark" to={"/produto"}>
+              <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/produtos"}>
                 Produtos</Link>
-
-              <Link class="fw-bold text-decoration-none me-3 text-dark" to={"/produto"}>
-                Produtos</Link>
-
-              <Link class="fw-bold text-decoration-none me-3 text-dark" to={"/"}>
+              <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/"}>
                 Carrinho</Link>
 
-              <Link class="fw-bold text-decoration-none me-3 text-dark" to={"/sobrenos"}>
+              <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/sobrenos"}>
                 Sobre Nós</Link>
+
 
             </Nav>
           </Navbar.Collapse>
