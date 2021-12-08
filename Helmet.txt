@@ -1,0 +1,12 @@
+react-helmet-async
+
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
+
+<HelmetProvider>
+                <Helmet>
+                    <title>CTD-Commerce | Carrinho</title>
+                    <link rel="canonical" href="https://www.tacobell.com/" />
+                </Helmet>
+            </HelmetProvider>
+
