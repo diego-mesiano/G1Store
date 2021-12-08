@@ -21,16 +21,17 @@ function Carrocel() {
 
     return (
         <>
-            <div classname="container">
+            <div classname="container" class="mx-2 " >
                 <Carousel variant="dark" id="carrocel">
                     <Carousel.Item interval={3000}>
 
                         <img
                             id="carrocel"
-                            className="d-block w-100 justify-content-center"
+                            class="d-block w-100 justify-content-center"
                             src="https://static.vecteezy.com/ti/vetor-gratis/p1/2303937-abstrato-cinza-fundo-com-linhas-onduladas-vetor.jpg"
                             alt="imagem de fundo do carrocel"
                         />
+
                         <Carousel.Caption id="texto-carrocel">
                             <GeraCards inicio={0} fim={3} produto={produtos}/>
                         </Carousel.Caption>
@@ -39,7 +40,7 @@ function Carrocel() {
 
                         <img
                             id="carrocel"
-                            className="d-block w-100"
+                            class="d-block w-100"
                             src="https://static.vecteezy.com/ti/vetor-gratis/p1/2303937-abstrato-cinza-fundo-com-linhas-onduladas-vetor.jpg"
                             alt="Second slide"
                         />

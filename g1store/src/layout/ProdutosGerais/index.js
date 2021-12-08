@@ -72,7 +72,7 @@ return (
                       </Card.Text>
                     </Card.Body>
                     <div class="btn-group mb-2 mx-2 ">
-                      <Button className="botao-card" class="btn btn-primary ">Ver</Button>
+                      <Button className="botao-card" class="btn btn-info ">Ver</Button>
                       <Button className="botao-card" class="btn btn-primary ">Add Carrinho</Button>
                     </div>
                   </Card>
