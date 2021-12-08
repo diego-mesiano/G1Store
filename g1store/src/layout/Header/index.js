@@ -18,6 +18,7 @@ function Header() {
               className="me-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll
+              
             >
               <Link to={"/"} className="nav-link">Home</Link>
               <Link to={"/produto"} className="nav-link">Produtos</Link>

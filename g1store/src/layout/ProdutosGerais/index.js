@@ -71,9 +71,9 @@ return (
                         {descricao}
                       </Card.Text>
                     </Card.Body>
-                    <div class="btn-group mb-3 mx-2">
-                      <Button className="botao-card" class="btn btn-primary">Ver</Button>
-                      <Button className="botao-card" class="btn btn-primary">Add Carrinho</Button>
+                    <div class="btn-group mb-2 mx-2 ">
+                      <Button className="botao-card" class="btn btn-primary ">Ver</Button>
+                      <Button className="botao-card" class="btn btn-primary ">Add Carrinho</Button>
                     </div>
                   </Card>
                 </div>
