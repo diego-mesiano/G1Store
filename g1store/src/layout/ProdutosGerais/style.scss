@@ -1,43 +1,50 @@
 section{
     
-.titulo-cards{
-    margin-top: 120px;
-    margin-right: 180px;
-    text-align: right;
-}
-
-#sessao-produtos{
-    display: flex;
-    #menu-categorias{
-        display:flex;
-        flex-direction: column;
-        background-color: white;
-        align-items: baseline;
+    .titulo-cards{
+        margin-top: 120px;
+        margin-right: 180px;
+        text-align: right;
     }
-    
-    #corpo-produtos{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: left;
-        .card{
-            background-color: white;
-            border-radius: 20px;
-            margin-top: 10px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            .img-card{
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                max-height: 200px;
-                
-            }
-            .botao-card{
 
-                margin-bottom: 10px;
-            }
+    #sessao-produtos{
+        display: flex;
+        justify-content: center;
+
+        #menu-categorias{
+            display:flex;
+            flex-direction: column;
+            background-color: white;
+            align-items: baseline;
         }
         
+        #corpo-produtos{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            .card{
+                height: 600px;
+                background-color: white;
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                
+                    .img-card{
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        max-height: 200px;
+                        
+                    }
+
+                    .card-buttoms{
+                        width: 100%;                        
+
+                        .botao-card{                            
+                            margin-bottom: 10px;
+                        }
+                    }
+                    
+            }
+        }
     }
 }
-}
-
