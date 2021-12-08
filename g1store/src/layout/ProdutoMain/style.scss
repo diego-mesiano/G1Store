@@ -1,3 +1,23 @@
-#teste{
-    margin-top: 150px;
+.corpo-produto{
+    min-height: calc(100vh - 130.5px);
+    padding-top: 200px;
+    display: flex;
+    
+    .imagem-section{
+        .imagem-produto{
+            min-width: 700px;
+            max-width: 700px;
+            padding: 40px;
+        }
+    }
+    .imagem-section{
+        display: flex;
+        flex-direction: column;
+        .div-botoes{
+            #botoes-produto{
+                margin: 10px;
+            }
+        }
+    }
+
 }
