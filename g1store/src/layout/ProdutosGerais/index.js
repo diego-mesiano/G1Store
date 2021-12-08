@@ -71,9 +71,9 @@ return (
                         {descricao.substr(0,100)}...
                       </Card.Text>
                     </Card.Body>
-                    <div class="btn-group mb-2 mx-2 ">
-                      <Button className="botao-card" class="btn btn-primary ">Ver</Button>
-                      <Button className="botao-card" class="btn btn-primary ">Add Carrinho</Button>
+                    <div className="btn-group mb-2 mx-2 ">
+                      <Button id="botao-card" className="btn btn-primary ">Ver</Button>
+                      <Button id="botao-card" className="btn btn-primary ">Add Carrinho</Button>
                     </div>
                   </Card>
                 </div>

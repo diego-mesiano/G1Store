@@ -21,8 +21,8 @@ function Carrocel() {
 
     return (
         <>
-            <div classname="container">
-                <Carousel variant="dark" id="carrocel">
+            <div  className="d-block w-100" id="div-carrocel">
+                <Carousel variant="dark" id="carrocel" className="d-block w-100">
                     <Carousel.Item interval={3000}>
 
                         <img
@@ -44,7 +44,7 @@ function Carrocel() {
                             alt="Second slide"
                         />
                         <Carousel.Caption >
-                        <GeraCards inicio={3} fim={6} produto={produtos}/>
+                            <GeraCards inicio={3} fim={6} produto={produtos}/>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

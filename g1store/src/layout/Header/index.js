@@ -25,7 +25,7 @@ function Header() {
               
             >
               <Link to={"/"} className="nav-link">Home</Link>
-              <Link to={"/produto"} className="nav-link">Produtos</Link>
+              <Link to={"/produtos"} className="nav-link">Produtos</Link>
               <Link to={"/"} className="nav-link">Carrinho</Link>
               <Link to={"/sobrenos"} className="nav-link">Sobre Nós</Link>
             </Nav>
