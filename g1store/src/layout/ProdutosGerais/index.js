@@ -34,7 +34,9 @@ return (
     {console.log(produtos)}
     <div id="ancora-produtos" />
     <section>
-      <h2 className="titulo-cards">Ultimos produtos cadastrados</h2>
+      <div className="titulo-cards">
+        <h2 >Ultimos produtos cadastrados</h2>
+      </div>
       <div id="sessao-produtos">
         <div id="menu-categorias">
           <Nav defaultActiveKey="/" className="flex-column" sticky=" top ">
@@ -60,7 +62,7 @@ return (
 
                 <div key={id} >
 
-                  <Card className="card" style={{ width: '15rem' }}>
+                  <Card className="card"  style={{ width: '15rem' }}>
                     <Card.Img className="img-card" variant="top" src={imagem} />
                     <Card.Body  >
                       <Card.Title >{nome}</Card.Title>
@@ -69,8 +71,10 @@ return (
                         {descricao}
                       </Card.Text>
                     </Card.Body>
-                    <Button className="botao-card" variant="primary">Ver</Button>
-                    <Button className="botao-card" variant="primary">Add Carrinho</Button>
+                    <div class="btn-group mb-3 mx-2">
+                      <Button className="botao-card" class="btn btn-primary">Ver</Button>
+                      <Button className="botao-card" class="btn btn-primary">Add Carrinho</Button>
+                    </div>
                   </Card>
                 </div>
 
