@@ -16,7 +16,7 @@ function ProdutoMain() {
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       })
-  }, [produto])
+  }, [produtoId])
   return (
     <>
     <div id="teste">
