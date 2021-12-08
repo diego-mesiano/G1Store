@@ -10,6 +10,7 @@ function ProdutoMain() {
 
   const { produtoId } = useParams();
   const [produto, setProduto] = useState({});
+  
   useEffect(() => {
     apiProdutos
       .get(`/produtos/${produtoId}`)
@@ -17,7 +18,10 @@ function ProdutoMain() {
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       })
+      
+
   }, [produtoId])
+  
   return (
     <>
       <main className="corpo-produto">
@@ -27,6 +31,7 @@ function ProdutoMain() {
         <section className="imagem-section">
           <h2>{produto.nome}</h2>
           <p>R${produto.preco}</p>
+          
           <p>{produto.descricao}</p>
           <div className="div-botoes">
             <Button size="md" id="botoes-produto">Adicionar Carrinho</Button>

@@ -68,7 +68,7 @@ return (
                       <Card.Title >{nome}</Card.Title>
                       <Card.Text>
                         R${preco} Ou 10x R${preco / 10},00<br />
-                        {descricao}
+                        {descricao.substr(0,100)}...
                       </Card.Text>
                     </Card.Body>
                     <div class="btn-group mb-3 mx-2">
