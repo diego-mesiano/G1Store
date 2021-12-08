@@ -2,53 +2,23 @@ import './style.scss';
 import { Carousel } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import apiProdutos from '../../services/apiProdutos';
+import GeraCards from './GeraCards';
 
 
 
 function Carrocel() {
     const [produtos, setProdutos] = useState([]);
     useEffect(() => {
-        async function consumoApi() {
-            try {
-                const produtos = await Promise.all(
-                    apiProdutos.get('produto'),
-                );
-                setProdutos(produtos.data);
-            } catch (err) {
-                console.error("Erro:" + err);
-            }
-        }
-        consumoApi();
-    }, []);
-
-
-    const gera3Destaques = (inicio, fim) => {
-        {console.log(produtos)}
-        return (
-            <>
-                <h2 id="titulo carrocel">Produtos em Destaque</h2>
-                <div id="destaques-container">
-                    {
-                        produtos.slice(inicio, fim).map((produtos) => {
-
-                            return (
-
-                                <ul key={produtos.id}>
-                                    <img src={produtos.imagem} alt="" />
-                                    <li><h3>{produtos.nome}</h3></li>
-                                    <li><h6>{produtos.preco}</h6></li>
-                                    <li>ou 10x R${produtos.preco / 10},00</li>
-                                </ul>
+        apiProdutos
+          .get("/produto")
+          .then((response) => setProdutos(response.data))
+          .catch((err) => {
+            console.error("ops! ocorreu um erro" + err);
+          });
+      }, []);
 
 
 
-                            )
-                        })
-                    }
-                </div>
-            </>
-        )
-    }
 
     return (
         <>
@@ -63,7 +33,7 @@ function Carrocel() {
                         alt="imagem de fundo do carrocel"
                     />
                     <Carousel.Caption id="texto-carrocel">
-                        {gera3Destaques(0, 3)}
+                        <GeraCards inicio={0} fim={3} produtos={produtos}/>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
@@ -75,7 +45,7 @@ function Carrocel() {
                         alt="Second slide"
                     />
                     <Carousel.Caption >
-                        {gera3Destaques(3, 6)}
+                    <GeraCards inicio={3} fim={6} produtos={produtos}/>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
