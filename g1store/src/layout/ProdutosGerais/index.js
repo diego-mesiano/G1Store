@@ -3,6 +3,7 @@ import { Button, Card } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import apiProdutos from '../../services/apiProdutos'
+import {Link} from 'react-router-dom'
 
 function ProdutosGerais() {
   const [categoria, setCategoria] = useState([]);
@@ -71,15 +72,11 @@ return (
                         {descricao.substr(0,100)}...
                       </Card.Text>
                     </Card.Body>
-<<<<<<< HEAD
+
                     <div className="btn-group mb-2 mx-2 ">
-                      <Button id="botao-card" className="btn btn-primary ">Ver</Button>
+                      <Link to={`produtos/${id}`}><Button id="botao-card" className="btn btn-primary ">Ver</Button></Link>
                       <Button id="botao-card" className="btn btn-primary ">Add Carrinho</Button>
-=======
-                    <div class="btn-group mb-2 mx-2 ">
-                      <Button className="botao-card" class="btn btn-info ">Ver</Button>
-                      <Button className="botao-card" class="btn btn-primary ">Add Carrinho</Button>
->>>>>>> 4a66507c37b72ead80f08e5a0e69800b62ae3d5b
+
                     </div>
                   </Card>
                 </div>

@@ -16,8 +16,8 @@ const GeraCards = ({ inicio, fim, produto }) => {
                                     <li><h6>{produto.preco}</h6></li>
                                     <li>ou 10x R${produto.preco / 10},00</li>
                                     <li>
-                                        <Button size="md" id="botoes-produto">Adicionar Carrinho</Button>
-                                        <Button size="md" id="botoes-produto" disabled>Comprar</Button>
+                                        <Button size="md" id="botoes-produto" style={{marginRight:'10px'}}>Ver</Button>
+                                        <Button size="md" id="botoes-produto">Add Carrinho</Button>
 
                                     </li>
                                 </ul>
