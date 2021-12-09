@@ -13,6 +13,7 @@ function ProdutoMain() {
   const { produtoId } = useParams();
   const [produto, setProduto] = useState({});
   
+  
   useEffect(() => {
     api
       .get(`/produtos/${produtoId}`)
