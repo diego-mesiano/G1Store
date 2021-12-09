@@ -7,6 +7,7 @@ import api2 from '../../services/api2'
 import { Link } from 'react-router-dom'
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
 import { useContext } from "react";
+import {Helmet} from 'react-helmet'
 
 function ProdutosGerais() {
   const [categoria, setCategoria] = useState([]);
@@ -42,6 +43,7 @@ function ProdutosGerais() {
           console.error("ops! ocorreu um erro na nossa segunda opção: " + err);
         }
       }
+     
     }
     consumoApi();
     
@@ -58,7 +60,6 @@ function ProdutosGerais() {
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       })
-      console.log("oeeeee: " + produtos.nome);
     }
     
     
@@ -66,6 +67,11 @@ function ProdutosGerais() {
 
   return (
     <>
+      
+      <Helmet>
+        <title>{`G1Store | ${categoriaMostrando}`}</title>
+      </Helmet>
+    
       <div id="ancora-produtos" />
       <section>
         <div className="titulo-cards">
