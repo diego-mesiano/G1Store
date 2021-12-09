@@ -1,13 +1,13 @@
-
-import { Navbar, Nav, Container } from 'react-bootstrap'
-import logo from '../../assets/img/logo.png'
+import "./style.scss";
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import logo from '../../assets/img/logo.png';
 import {Link} from 'react-router-dom';
 
 
 function Header() {
   return (
     <>
-      <Navbar bg="light" expand="lg" fixed="top" className="rounded-top rounded-pill border-bottom border-primary border-5">
+      <Navbar bg="light" expand="lg" sticky="top" className="rounded-top rounded-pill border-bottom border-primary border-5">
         <Container fluid>
 
           {/* Logo */}
