@@ -7,9 +7,9 @@ function SobreNosMain() {
 
   return (
     <>
-      <div class=" w-100 row g-3 justify-content-center align-items-center my-5">
+      <div class=" w-100 row g-3 justify-content-center my-5">
 
-        <Card class="col-4 " style={{ width: '22rem' }}>
+        <Card class="col-3 " style={{ width: '22rem' }}>
           <Card.Img class="pt-3" variant="top" src="https://media-exp1.licdn.com/dms/image/D4E35AQEldNK_KvWVOg/profile-framedphoto-shrink_800_800/0/1626628271702?e=1638986400&v=beta&t=IKSy8dD227fdKKQBDPEw8LpUX52JZkQzcuipVtgCoko" />
           <Card.Body>
             <Card.Title>Jeziel Oliveira de Paula</Card.Title>

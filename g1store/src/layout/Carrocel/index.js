@@ -46,6 +46,8 @@ function Carrocel() {
                             <GeraCards inicio={0} fim={3} produto={produtos}/>
                         </Carousel.Caption>
                     </Carousel.Item>
+
+                    
                     <Carousel.Item  interval={3000}>
 
                         <img
