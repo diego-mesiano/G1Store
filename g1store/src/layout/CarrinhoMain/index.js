@@ -11,23 +11,28 @@ function CarrinhoMain(){
      <>
         {
            produtosCarrinho.map((a)=>{
+                
                return(
                     <>
                    <p>{a.nome}</p> 
                    <p>{a.preco}</p>
+                   
                    <p>---------------------</p>
                    </>
                )
            })
         }
+                <>
+                <p>{soma}</p>
+                </>
         {
-            produtosCarrinho.map((b)=>{
-                return(
+            
+                
                     
-                    parseFloat(soma+=b.preco)
+                   
                     
-                )
-            })
+                
+            
         }
         
      </>
