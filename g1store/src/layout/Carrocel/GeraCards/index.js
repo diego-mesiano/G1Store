@@ -5,12 +5,13 @@ import {useContext} from "react";
 
 const GeraCards = ({ inicio, fim, produto }) => {
     const {addProduto} = useContext(CarrinhoContext)
- 
+    
     return (
         <>
             <h2 id="titulo carrocel">Produtos em Destaque</h2>
             <div id="destaques-container">
                 {
+                    
                     produto.slice(inicio, fim).map((produto) => {
                         
                         return (

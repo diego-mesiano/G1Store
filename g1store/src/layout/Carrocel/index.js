@@ -8,6 +8,11 @@ import GeraCards from './GeraCards';
 
 function Carrocel() {
     const [produtos, setProdutos] = useState([]);
+
+    function gerarAleatorio(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
     useEffect(() => {
         api
           .get("/produtos")
@@ -24,7 +29,8 @@ function Carrocel() {
             });
       }, []);
 
-
+    let aleatorio = gerarAleatorio(0,produtos.length);
+    let aleatorio2 = gerarAleatorio(0,produtos.length);
 
 
     return (
@@ -43,7 +49,7 @@ function Carrocel() {
                         />
 
                         <Carousel.Caption id="texto-carrocel">
-                            <GeraCards inicio={0} fim={3} produto={produtos}/>
+                            <GeraCards inicio={aleatorio} fim={aleatorio+3} produto={produtos}/>
                         </Carousel.Caption>
                     </Carousel.Item>
 
@@ -57,7 +63,7 @@ function Carrocel() {
                             alt="Second slide"
                         />
                         <Carousel.Caption >
-                            <GeraCards inicio={3} fim={6} produto={produtos}/>
+                            <GeraCards inicio={aleatorio2} fim={aleatorio2 + 3} produto={produtos}/>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
