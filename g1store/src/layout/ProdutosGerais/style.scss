@@ -10,7 +10,9 @@ section{
         justify-content: center;
 
         #menu-categorias{
-            background-color: aqua;
+            position: sticky;
+            top: 0;
+            bottom: 50px;
             display:flex;
             flex-direction: column;
             background-color: white;

@@ -30,7 +30,7 @@ function Header() {
               <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/produtos"}>
                 Produtos</Link>
                 
-              <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/"}>
+              <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/carrinho"}>
                 Carrinho<Button variant="danger" size="sm" disabled> {Object.keys(produtosCarrinho).length} </Button></Link>
 
               <Link className="fw-bold text-decoration-none me-5 text-dark" to={"/sobrenos"}>
