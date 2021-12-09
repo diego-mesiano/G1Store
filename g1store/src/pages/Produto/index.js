@@ -8,7 +8,7 @@ function Produto() {
     return (
         <>
             <Header />
-            <ProdutoMain  />
+            <ProdutoMain/>
             <Footer />
         </>
     );

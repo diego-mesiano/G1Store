@@ -4,11 +4,12 @@ import api from '../../services/api';
 import api2 from '../../services/api2';
 import { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
-
+import {CarrinhoContext} from '../../contexts/CarrinhoContext';
+import { useContext } from "react";
 
 
 function ProdutoMain() {
-
+  const {addProduto} = useContext(CarrinhoContext)
   const { produtoId } = useParams();
   const [produto, setProduto] = useState({});
   
@@ -42,7 +43,7 @@ function ProdutoMain() {
           
           <p>{produto.descricao}</p>
           <div className="div-botoes">
-            <Button size="md" id="botoes-produto">Adicionar Carrinho</Button>
+            <Button size="md" id="botoes-produto" onClick={()=>addProduto(produto)}>Adicionar Carrinho</Button>
             <Button size="md" id="botoes-produto" disabled>Comprar</Button>
           </div>
 

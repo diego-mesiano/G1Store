@@ -5,11 +5,14 @@ import Nav from 'react-bootstrap/Nav';
 import api from '../../services/api'
 import api2 from '../../services/api2'
 import { Link } from 'react-router-dom'
+import {CarrinhoContext} from '../../contexts/CarrinhoContext';
+import { useContext } from "react";
 
 function ProdutosGerais() {
   const [categoria, setCategoria] = useState([]);
   const [produtos, setProdutos] = useState([]);
   const [categoriaMostrando, setCategoriaMostrando] = useState("Ultimos produtos cadastrados");
+  const {addProduto} = useContext(CarrinhoContext)
   
 
 
@@ -107,7 +110,7 @@ function ProdutosGerais() {
 
                       <div className="btn-group mb-2 mx-2 ">
                         <Link to={`/produtos/${id}`}><Button id="botao-card" className="btn btn-info ">Ver</Button></Link>
-                        <Button id="botao-card" className="btn btn-primary ">Add Carrinho</Button>
+                        <Button id="botao-card" className="btn btn-primary " onClick={()=>addProduto(produtos)}>Add Carrinho</Button>
 
                       </div>
                     </Card>
