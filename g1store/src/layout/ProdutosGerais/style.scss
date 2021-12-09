@@ -10,16 +10,19 @@ section{
         justify-content: center;
 
         #menu-categorias{
+            background-color: aqua;
             display:flex;
             flex-direction: column;
             background-color: white;
-            align-items: baseline;
+            align-items: center;
+            margin-left: 30px;
+        
         }
         
         #corpo-produtos{
             display:flex;
             flex-wrap: wrap;
-            justify-content: left;
+            justify-content: right;
             .card{
                 height: 550px;
                 background-color: white;

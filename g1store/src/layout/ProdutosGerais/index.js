@@ -66,7 +66,6 @@ function ProdutosGerais() {
 
   return (
     <>
-      
       <div id="ancora-produtos" />
       <section>
         <div className="titulo-cards">
@@ -74,7 +73,7 @@ function ProdutosGerais() {
         </div>
         <div id="sessao-produtos">
           <div id="menu-categorias">
-            <Nav defaultActiveKey="/" className="flex-column" sticky=" top ">
+            <Nav  defaultActiveKey="/" sticky=" top " bg="dark">
               <Nav.Link href={"/produtos"}>Todos os Produtos</Nav.Link>
               {
                 categoria.map((categoria) => {
@@ -98,7 +97,7 @@ function ProdutosGerais() {
 
                   <div key={id} >
 
-                    <Card className="card" style={{ width: '15rem' }}>
+                    <Card className="card" style={{ width: '13rem' }}>
                       <Card.Img className="img-card" variant="top" src={imagem} />
                       <Card.Body  >
                         <Card.Title >{nome.substr(0, 50)}</Card.Title>
@@ -111,7 +110,6 @@ function ProdutosGerais() {
                       <div className="btn-group mb-2 mx-2 ">
                         <Link to={`/produtos/${id}`}><Button id="botao-card" className="btn btn-info ">Ver</Button></Link>
                         <Button id="botao-card" className="btn btn-primary " onClick={()=>addProduto(produtos)}>Add Carrinho</Button>
-
                       </div>
                     </Card>
                   </div>
