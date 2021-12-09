@@ -1,4 +1,5 @@
 import { Button } from "react-bootstrap";
+import {Link} from 'react-router-dom';
 const GeraCards = ({ inicio, fim, produto }) => {
 
     return (
@@ -16,7 +17,7 @@ const GeraCards = ({ inicio, fim, produto }) => {
                                     <li><h6>{produto.preco}</h6></li>
                                     <li>ou 10x R${produto.preco / 10},00</li>
                                     <li>
-                                        <Button size="md" id="botoes-produto" style={{marginRight:'10px'}}>Ver</Button>
+                                        <Link to={`produtos/${produto.id}`}><Button size="md" id="botoes-produto" style={{marginRight:'10px'}}>Ver</Button></Link>
                                         <Button size="md" id="botoes-produto">Add Carrinho</Button>
 
                                     </li>

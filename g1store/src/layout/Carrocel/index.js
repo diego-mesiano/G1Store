@@ -1,19 +1,27 @@
 import './style.scss';
 import { Carousel } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import apiProdutos from '../../services/apiProdutos';
+import api from '../../services/api';
+import api2 from '../../services/api';
 import GeraCards from './GeraCards';
 
 
 function Carrocel() {
     const [produtos, setProdutos] = useState([]);
     useEffect(() => {
-        apiProdutos
+        api
           .get("/produtos")
           .then((response) => setProdutos(response.data))
           .catch((err) => {
             console.error("ops! ocorreu um erro" + err);
-          });
+            console.log("Tentando conectar no segundo Backend...")
+            api2
+                .get("/produtos")
+                .then((response) => setProdutos(response.data))
+                .catch((err) =>{
+                    console.error("ops! ocorreu um erro na nossa segunda opção" + err);
+                })
+            });
       }, []);
 
 

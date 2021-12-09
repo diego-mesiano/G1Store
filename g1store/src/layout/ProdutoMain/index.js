@@ -1,6 +1,6 @@
 import './style.scss';
 import { useParams } from 'react-router';
-import apiProdutos from '../../services/apiProdutos';
+import api from '../../services/api';
 import { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
 
@@ -12,7 +12,7 @@ function ProdutoMain() {
   const [produto, setProduto] = useState({});
   
   useEffect(() => {
-    apiProdutos
+    api
       .get(`/produtos/${produtoId}`)
       .then((response) => setProduto(response.data))
       .catch((err) => {

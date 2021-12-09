@@ -2,7 +2,7 @@ import './style.scss';
 import { Button, Card } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
-import apiProdutos from '../../services/apiProdutos'
+import api from '../../services/api'
 import {Link} from 'react-router-dom'
 
 function ProdutosGerais() {
@@ -15,8 +15,8 @@ function ProdutosGerais() {
       try {
         const [produtos, categoria] = await Promise.all(
           [
-            apiProdutos.get('produtos'),
-            apiProdutos.get('produtos/categorias')
+            api.get('produtos'),
+            api.get('produtos/categorias')
           ]
         );
         setProdutos(produtos.data);
