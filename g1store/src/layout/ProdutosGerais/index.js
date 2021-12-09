@@ -3,6 +3,7 @@ import { Button, Card } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import api from '../../services/api'
+import api2 from '../../services/api2'
 import {Link} from 'react-router-dom'
 
 function ProdutosGerais() {
@@ -23,6 +24,18 @@ function ProdutosGerais() {
         setCategoria(categoria.data);
       }catch(err){
         console.error("Erro:" + err);
+        console.log("Tentando conectar no segundo Backend...")
+        try{
+          const [produtos, categoria] = await Promise.all(
+            api2.get('produtos'),
+            api2.get('produtos/categorias')
+          );
+          setProdutos(produtos.data);
+          setCategoria(categoria.data);
+        }
+        catch(err){
+          console.error("ops! ocorreu um erro na nossa segunda opção: " + err);
+        }
       }
     }  
     consumoApi();

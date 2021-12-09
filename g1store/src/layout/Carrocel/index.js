@@ -2,7 +2,7 @@ import './style.scss';
 import { Carousel } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import api from '../../services/api';
-import api2 from '../../services/api';
+import api2 from '../../services/api2';
 import GeraCards from './GeraCards';
 
 
@@ -19,7 +19,7 @@ function Carrocel() {
                 .get("/produtos")
                 .then((response2) => setProdutos(response2.data))
                 .catch((err) =>{
-                    console.error("ops! ocorreu um erro na nossa segunda opção" + err);
+                    console.error("ops! ocorreu um erro na nossa segunda opção: " + err);
                 })
             });
       }, []);
