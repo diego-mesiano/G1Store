@@ -78,19 +78,21 @@ function ProdutosGerais() {
           <h2 >Mostrando: {categoriaMostrando}</h2>
         </div>
         <div id="sessao-produtos">
-          <div class="sticky-top"  id="menu-categorias">
-            <Nav  defaultActiveKey="/" /* sticky=" top " */ bg="dark">
-              <Nav.Link href={"/produtos"}>Todos os Produtos</Nav.Link>
-              {
-                categoria.map((categoria) => {
-                  return (
+          <div /* className="sticky-top" */  id="menu-categorias">
+            <div className="sticky-top h-5 mt-5">
+              <Nav  defaultActiveKey="/" bg="dark">
+                <Nav.Link href={"/produtos"}>Todos os Produtos</Nav.Link>
+                {
+                  categoria.map((categoria) => {
+                    return (
 
-                    <Nav.Link key={categoria.nome} eventKey={categoria.nome} onClick={()=>consumoCategoria(categoria.id)}>{categoria.nome}</Nav.Link>
+                      <Nav.Link key={categoria.nome} eventKey={categoria.nome} onClick={()=>consumoCategoria(categoria.id)}>{categoria.nome}</Nav.Link>
 
-                  )
-                })
-              }
-            </Nav>
+                    )
+                  })
+                }
+              </Nav>
+            </div>
           </div>
 
           <div id="corpo-produtos">
