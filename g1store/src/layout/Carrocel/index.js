@@ -17,7 +17,7 @@ function Carrocel() {
             console.log("Tentando conectar no segundo Backend...")
             api2
                 .get("/produtos")
-                .then((response) => setProdutos(response.data))
+                .then((response2) => setProdutos(response2.data))
                 .catch((err) =>{
                     console.error("ops! ocorreu um erro na nossa segunda opção" + err);
                 })
