@@ -7,11 +7,11 @@ import {Link} from 'react-router-dom';
 function Header() {
   return (
     <>
-      <Navbar variant="primary" expand="lg" fixed="top" className="border-bottom border-success">
+      <Navbar bg="light" expand="lg" fixed="top" className="rounded-top rounded-pill border-bottom border-primary border-5">
         <Container fluid>
 
           {/* Logo */}
-          <Navbar.Brand href="#"><img className="logo" src={logo} alt="Logo" width="70"/></Navbar.Brand>
+          <Navbar.Brand href="#"><img  className="logo ms-4" src={logo} alt="Logo" width="70"/></Navbar.Brand>
 
           {/* menu hamburguer */}
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -23,14 +23,15 @@ function Header() {
 
               <Link className="fw-bolder text-decoration-none me-3 text-dark" to={"/"}>
                 Home</Link>
+
               <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/produtos"}>
                 Produtos</Link>
+                
               <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/"}>
                 Carrinho</Link>
 
-              <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/sobrenos"}>
+              <Link className="fw-bold text-decoration-none me-5 text-dark" to={"/sobrenos"}>
                 Sobre Nós</Link>
-
 
             </Nav>
           </Navbar.Collapse>

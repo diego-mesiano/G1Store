@@ -74,7 +74,7 @@ return (
                     </Card.Body>
 
                     <div className="btn-group mb-2 mx-2 ">
-                      <Link to={`produtos/${id}`}><Button id="botao-card" className="btn btn-primary ">Ver</Button></Link>
+                      <Link to={`produtos/${id}`}><Button id="botao-card" className="btn btn-info ">Ver</Button></Link>
                       <Button id="botao-card" className="btn btn-primary ">Add Carrinho</Button>
 
                     </div>

@@ -22,7 +22,7 @@ function Carrocel() {
     return (
         <>
 
-            <div  className="d-block w-100" id="div-carrocel">
+            <div  className="d-block w-100 mt-5" id="div-carrocel">
                 <Carousel variant="dark" id="carrocel" className="d-block w-100">
 
                     <Carousel.Item interval={3000}>
