@@ -11,7 +11,7 @@ function Header() {
         <Container fluid>
 
           {/* Logo */}
-          <Navbar.Brand href="#"><img  className="logo ms-4" src={logo} alt="Logo" width="70"/></Navbar.Brand>
+          <Navbar.Brand href="/"><img  className="logo ms-4" src={logo} alt="Logo" width="70"/></Navbar.Brand>
 
           {/* menu hamburguer */}
           <Navbar.Toggle aria-controls="navbarScroll" />
