@@ -21,7 +21,7 @@ section{
             flex-wrap: wrap;
             justify-content: left;
             .card{
-                height: 400px;
+                height: 550px;
                 background-color: white;
                 border-radius: 10px;
                 margin-top: 10px;
@@ -31,7 +31,10 @@ section{
                     .img-card{
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
-                        max-height: 200px;
+                        width: 200px;
+                        height: 200px;
+                        object-fit: contain;
+                        
                         
                     }
 

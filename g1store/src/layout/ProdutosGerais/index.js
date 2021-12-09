@@ -101,7 +101,7 @@ function ProdutosGerais() {
                     <Card className="card" style={{ width: '15rem' }}>
                       <Card.Img className="img-card" variant="top" src={imagem} />
                       <Card.Body  >
-                        <Card.Title >{nome}</Card.Title>
+                        <Card.Title >{nome.substr(0, 50)}</Card.Title>
                         <Card.Text>
                           R${preco} Ou 10x R${preco / 10},00<br />
                           {descricao.substr(0, 100)}...
