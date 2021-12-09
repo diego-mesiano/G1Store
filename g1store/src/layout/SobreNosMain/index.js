@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 function SobreNosMain() {
 
   return (
-    <main>
+    <>
       <div id="sobrenos">
         <h1>
           Sobre a equipe de desenvolvimendo
@@ -32,7 +32,7 @@ function SobreNosMain() {
           }
         </ul>
       </div>
-    </main>
+    </>
   );
 }
 
