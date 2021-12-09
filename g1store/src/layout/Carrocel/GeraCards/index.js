@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {CarrinhoContext} from '../../../contexts/CarrinhoContext';
-import { useContext, useState } from "react";
+import {useContext} from "react";
 
 const GeraCards = ({ inicio, fim, produto }) => {
     const {addProduto} = useContext(CarrinhoContext)

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../layout/Footer';
 import Header from '../../layout/Header';
+import {Helmet} from 'react-helmet'
 import './style.scss';
 
 const NotFound = () => {
@@ -20,7 +21,10 @@ const NotFound = () => {
     }, [navigate, timer])
 
     return (
-        <>
+        <>  
+            <Helmet>
+                <title>G1Store | 404</title>
+            </Helmet>
             <Header />
             <main id="corpo404">
                 <h2>Nada por aqui =(</h2>

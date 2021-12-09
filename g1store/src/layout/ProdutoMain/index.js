@@ -5,10 +5,11 @@ import api2 from '../../services/api2';
 import { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
+import { Helmet } from 'react-helmet';
 import { useContext } from "react";
 
 
-function ProdutoMain() {
+function ProdutoMain(props) {
   const {addProduto} = useContext(CarrinhoContext)
   const { produtoId } = useParams();
   const [produto, setProduto] = useState({});
@@ -34,6 +35,9 @@ function ProdutoMain() {
   
   return (
     <>
+      <Helmet>
+        <title>{`G1Store | ${produto.nome}`}</title>
+      </Helmet>
       <main className="corpo-produto">
         <section className="imagem-section">
           <img className="imagem-produto" src={produto.imagem} alt={produto.nome} />

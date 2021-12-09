@@ -1,5 +1,5 @@
 import './style.scss';
-import {useContext, useState} from 'react';
+import {useContext} from 'react';
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
 
 function CarrinhoMain(){
