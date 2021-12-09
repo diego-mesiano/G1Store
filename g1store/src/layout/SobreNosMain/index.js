@@ -1,20 +1,30 @@
 import './style.scss';
 import integrantes from './integrantes.json';
-import { Button } from 'react-bootstrap';
+import { Card, Button  } from 'react-bootstrap';
 
 
 function SobreNosMain() {
 
   return (
     <>
+      <div>
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of
+              the card's content.
+            </Card.Text>
+          </Card.Body>
+          <Card.Body>
+            <Card.Link href="#">Card Link</Card.Link>
+            <Card.Link href="#">Another Link</Card.Link>
+          </Card.Body>
+        </Card>
+      </div>
       <div id="sobrenos">
-        <h1>
-          Sobre a equipe de desenvolvimendo
-        </h1>
-        <p>
-            Este foi o nosso primeiro projeto integrador em grupo implementando as matérias de Back-end, Front-end e Infraesrutura. 
-            Feito durante o terceiro bimestre do curso <a href="https://www.digitalhouse.com/br/acoes/certified-tech-developer">certified tech developer</a>(curso dispobilinizado pela empresa <a href="https://www.digitalhouse.com/br">Digital House</a>), pelos alunos:
-        </p>
+        
       </div>
       <div >
         <ul id="sobrenos-ul">
