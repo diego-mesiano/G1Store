@@ -4,6 +4,7 @@ import Main from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import Produtos from '../pages/Produtos'
 import Produto from '../pages/Produto'
+import Carrinho from '../pages/Carrinho';
 import CarrinhoContextProvider from '../contexts/CarrinhoContext';
 
 
@@ -14,6 +15,7 @@ const RouteList = () => (
         <Route path="/" element={<Main />} />
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/sobrenos" element={<SobreNos />} />
+        <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/produtos/:produtoId" element={<Produto />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
