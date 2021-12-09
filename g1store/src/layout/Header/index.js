@@ -2,9 +2,12 @@ import "./style.scss";
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo from '../../assets/img/logo.png';
 import {Link} from 'react-router-dom';
+import {CarrinhoContext} from '../../contexts/CarrinhoContext';
+import { useContext } from "react";
 
 
 function Header() {
+  const {prod} = useContext(CarrinhoContext)
   return (
     <>
       <Navbar bg="light" expand="lg" sticky="top" className="rounded-top rounded-pill border-bottom border-primary border-5">
@@ -28,7 +31,7 @@ function Header() {
                 Produtos</Link>
                 
               <Link className="fw-bold text-decoration-none me-3 text-dark" to={"/"}>
-                Carrinho</Link>
+                Carrinho<strong>{[prod].lenght}</strong></Link>
 
               <Link className="fw-bold text-decoration-none me-5 text-dark" to={"/sobrenos"}>
                 Sobre Nós</Link>
