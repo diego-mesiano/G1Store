@@ -72,8 +72,8 @@ function ProdutosGerais() {
           <h2 >Mostrando: {categoriaMostrando}</h2>
         </div>
         <div id="sessao-produtos">
-          <div id="menu-categorias">
-            <Nav  defaultActiveKey="/" sticky=" top " bg="dark">
+          <div class="sticky-top"  id="menu-categorias">
+            <Nav  defaultActiveKey="/" /* sticky=" top " */ bg="dark">
               <Nav.Link href={"/produtos"}>Todos os Produtos</Nav.Link>
               {
                 categoria.map((categoria) => {
@@ -97,8 +97,8 @@ function ProdutosGerais() {
 
                   <div key={id} >
 
-                    <Card className="card" style={{ width: '13rem' }}>
-                      <Card.Img className="img-card" variant="top" src={imagem} />
+                    <Card className="card justify-content-center aling-items-center " style={{ width: '13rem' }}>
+                      <Card.Img className="img-card p-4" variant="top" src={imagem} />
                       <Card.Body  >
                         <Card.Title >{nome.substr(0, 50)}</Card.Title>
                         <Card.Text>
