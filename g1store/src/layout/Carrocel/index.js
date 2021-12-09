@@ -30,15 +30,15 @@ function Carrocel() {
     return (
         <>
 
-            <div  className="d-block w-100 mt-5" id="div-carrocel">
-                <Carousel variant="dark" id="carrocel" className="d-block w-100">
+            <div  className="d-block w-100 mt-3" id="div-carrocel">
+                <Carousel /* fade */ variant="light" id="carrocel" className="d-block w-100">
 
-                    <Carousel.Item interval={3000}>
+                    <Carousel.Item  interval={3000}>
 
                         <img
                             id="carrocel"
-                            className="d-block w-100 justify-content-center"
-                            src="https://static.vecteezy.com/ti/vetor-gratis/p1/2303937-abstrato-cinza-fundo-com-linhas-onduladas-vetor.jpg"
+                            className="d-block w-100 justify-content-center "
+                            src="https://cdn.pixabay.com/photo/2016/05/24/14/42/blue-1412469_1280.png"
                             alt="imagem de fundo do carrocel"
                         />
 
@@ -46,12 +46,12 @@ function Carrocel() {
                             <GeraCards inicio={0} fim={3} produto={produtos}/>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item interval={3000}>
+                    <Carousel.Item  interval={3000}>
 
                         <img
                             id="carrocel"
                             className="d-block w-100"
-                            src="https://static.vecteezy.com/ti/vetor-gratis/p1/2303937-abstrato-cinza-fundo-com-linhas-onduladas-vetor.jpg"
+                            src="https://cdn.pixabay.com/photo/2016/05/24/14/42/blue-1412469_1280.png"
                             alt="Second slide"
                         />
                         <Carousel.Caption >

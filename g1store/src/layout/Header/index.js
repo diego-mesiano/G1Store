@@ -10,7 +10,7 @@ function Header() {
   const {produtosCarrinho} = useContext(CarrinhoContext)
   return (
     <>
-      <Navbar bg="light" expand="lg" fixed="top" className="rounded-top rounded-pill border-bottom border-primary border-5">
+      <Navbar bg="light" expand="lg" sticky="top" className="rounded-top rounded-pill border-bottom border-primary border-5">
         <Container fluid>
 
           {/* Logo */}
