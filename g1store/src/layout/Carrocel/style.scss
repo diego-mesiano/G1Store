@@ -1,5 +1,5 @@
 #carrocel{
-    height: 80vh;
+    height: 55vh;
 }
 
 #destaques-container{
@@ -9,6 +9,16 @@
         max-width: 200px;
     }
     
+}
+
+@media (max-width: 880px){
+    #div-carrocel{
+        display:none;
+        #carrocel{
+            
+        }
+
+    }
 }
 
 $carousel-indicator-height: 80hv;

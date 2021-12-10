@@ -16,9 +16,10 @@ const CarrinhoContextProvider = ({children}) =>{
     },[produtosCarrinho]);
 
     const addProduto = (produto) => dispatch({type: 'ADD_CARRINHO', payload: produto });
+    const removeProduto = (produto) => dispatch({type: 'REMOVE_CARRINHO', payload: produto });
 
     return(
-        <CarrinhoContext.Provider value={{produtosCarrinho, addProduto}}>
+        <CarrinhoContext.Provider value={{produtosCarrinho, addProduto, removeProduto}}>
             {children}
         </CarrinhoContext.Provider>
     )

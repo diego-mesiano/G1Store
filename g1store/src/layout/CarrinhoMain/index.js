@@ -7,7 +7,7 @@ import ConversaoBRL from '../../services/CoversaoBRL';
 import { Card, Button } from 'react-bootstrap';
 
 function CarrinhoMain() {
-    const { produtosCarrinho } = useContext(CarrinhoContext)
+    const { produtosCarrinho, removeProduto } = useContext(CarrinhoContext)
 
 
 
@@ -32,7 +32,7 @@ function CarrinhoMain() {
 
                                         <div className="btn-group mb-2 mx-2 ">
 
-                                            <Button variant="danger" id="botao-card" className="btn btn-primary " onClick={() => null}>Excluir</Button>
+                                            <Button variant="danger" id="botao-card" className="btn btn-primary " onClick={() => removeProduto(a)}>Excluir</Button>
                                         </div>
                                     </Card>
                                 </React.Fragment>

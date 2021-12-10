@@ -26,7 +26,10 @@ export const carrinhoReducer = (state, action) =>{
                   })
             }
             return state;
-        
+        case 'REMOVE_CARRINHO':
+            return state.filter(carrinho =>(
+                carrinho.id !== action.payload.id
+            ))
         default:
             return state;
     }
