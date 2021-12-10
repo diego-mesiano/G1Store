@@ -1,7 +1,7 @@
 import './style.scss';
 import { Card } from 'react-bootstrap';
 import integrantes from './integrantes.json'
-import {jezi} from '../../assets/img/jezi.jfif'
+
 
 
 function SobreNosMain() {
