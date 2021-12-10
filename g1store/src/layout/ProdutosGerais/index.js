@@ -121,7 +121,7 @@ function ProdutosGerais() {
 
                   <div key={id} >
 
-                    <Card className="card justify-content-center aling-items-center " style={{ width: '14rem' }}>
+                    <Card className="card justify-content-center aling-items-center " style={{ width: '17rem' }}>
                       <Card.Img className="img-card p-4" variant="top" src={imagem} />
                       <Card.Body  >
                         <Card.Title >{nome.substr(0, 50)}</Card.Title>
