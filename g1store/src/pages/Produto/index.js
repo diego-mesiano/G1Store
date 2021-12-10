@@ -9,7 +9,7 @@ function Produto() {
         <>
             <Header />
             <ProdutoMain/>
-            <Footer />
+            <Footer/>
         </>
     );
 }
