@@ -1,5 +1,6 @@
 import { createContext, useReducer, useEffect } from "react";
 import { carrinhoReducer } from "../reducers/carrinhoReducer";
+import Swal from 'sweetalert2'
 
 export const CarrinhoContext = createContext();
 
@@ -11,6 +12,7 @@ const CarrinhoContextProvider = ({children}) =>{
 
     useEffect(()=>{
         localStorage.setItem('carrinho-G1', JSON.stringify(produtosCarrinho));
+        
     },[produtosCarrinho]);
 
     const addProduto = (produto) => dispatch({type: 'ADD_CARRINHO', payload: produto });
