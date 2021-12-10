@@ -45,21 +45,18 @@ function ProdutoMain(props) {
         </section>
         <section className="descricao-section">
           <h2>{produto.nome}</h2>
-          <p class="h4">{/* <ConversaoBRL> */}{produto.preco}{/* </ConversaoBRL> */}</p>
+          <p class="h3">{produto.preco}</p>
           
           <p>{produto.descricao}</p>
           <div className="div-botoes">
             <Button size="md" id="botoes-produto" onClick={()=>addProduto(produto)}>Adicionar Carrinho</Button>
             <Button size="md" id="botoes-produto" disabled>Comprar</Button>
           </div>
-
+          
         </section>
+        
       </main>
-
-
-      {/* {<Header/>
-            <ProdutoMain/>
-            <Footer/>} */}
+      
     </>
   );
 
