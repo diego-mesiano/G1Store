@@ -20,14 +20,14 @@ function ProdutosGerais() {
   useEffect(() => {
     async function consumoApi() {
       try {
-        const [produtos, categoria] = await Promise.all(
+        const [produto, categorias] = await Promise.all(
           [
             api.get('produtos'),
             api.get('produtos/categorias')
           ]
         );
-        setProdutos(produtos.data);
-        setCategoria(categoria.data);
+        setProdutos(produto.data);
+        setCategoria(categorias.data);
       } catch (err) {
         console.error("Erro:" + err);
         console.log("Tentando conectar no segundo Backend...")
@@ -117,7 +117,7 @@ function ProdutosGerais() {
 
                       <div className="btn-group mb-2 mx-2 ">
                         <Link to={`/produtos/${id}`}><Button id="botao-card" className="btn btn-info ">Ver</Button></Link>
-                        <Button id="botao-card" className="btn btn-primary " onClick={()=>addProduto(produtos)}>Add Carrinho</Button>
+                        <Button id="botao-card" className="btn btn-primary " onClick={()=>addProduto({id, imagem, nome, descricao, preco})}>Add Carrinho</Button>
                       </div>
                     </Card>
                   </div>
