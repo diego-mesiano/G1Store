@@ -28,19 +28,22 @@ function ProdutosGerais() {
         );
         setProdutos(produto.data);
         setCategoria(categorias.data);
+        console.log("Conectado no primeiro backend");
       } catch (err) {
-        console.error("Erro:" + err);
+        console.error("Erro backend 1: " + err);
         console.log("Tentando conectar no segundo Backend...")
         try {
-          const [produtos, categoria] = await Promise.all(
+          const [a, b] = await Promise.all(
             api2.get('produtos'),
             api2.get('produtos/categorias')
           );
-          setProdutos(produtos.data);
-          setCategoria(categoria.data);
+          setProdutos(a.data);
+          setCategoria(b.data);
+          console.log("Conectado no segundo backend");
+
         }
         catch (err) {
-          console.error("ops! ocorreu um erro na nossa segunda opção: " + err);
+          console.error("Erro backend 2: " + err);
         }
       }
      
