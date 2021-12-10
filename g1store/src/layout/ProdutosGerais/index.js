@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { CarrinhoContext } from '../../contexts/CarrinhoContext';
 import { useContext } from "react";
 import { Helmet } from 'react-helmet-async'
+import ConversaoBRL from '../../services/CoversaoBRL';
 
 function ProdutosGerais() {
   const [categoria, setCategoria] = useState([]);
@@ -125,7 +126,7 @@ function ProdutosGerais() {
                       <Card.Body  >
                         <Card.Title >{nome.substr(0, 50)}</Card.Title>
                         <Card.Text>
-                          R${preco} Ou 10x R${preco / 10},00<br />
+                          <ConversaoBRL>{preco}</ConversaoBRL> Ou 10x <ConversaoBRL>{preco / 10}</ConversaoBRL><br />
                           {descricao.substr(0, 100)}...
                         </Card.Text>
                       </Card.Body>
