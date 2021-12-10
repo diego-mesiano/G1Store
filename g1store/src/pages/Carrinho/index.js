@@ -1,6 +1,6 @@
 import Header from '../../layout/Header';
 import CarrinhoMain from '../../layout/CarrinhoMain/';
-import InformacoesCarrinho from '../../layout/CarrinhoMain/InformacoesCarrinho';
+
 import Footer from '../../layout/Footer'
 import {Helmet} from 'react-helmet-async'
 import './style.scss';
@@ -15,7 +15,6 @@ function Carrinho() {
             </Helmet>
             <Header/>
             <CarrinhoMain/>
-            <InformacoesCarrinho/>
             <Footer/>
         </>
     );

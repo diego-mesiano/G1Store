@@ -1,0 +1,15 @@
+.corpo-carrinho{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: visible;
+    .produtos-carrinho{
+        min-height: 755px;
+    }
+    .corpo-informacoes{
+        position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    }
+
+}
