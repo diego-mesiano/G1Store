@@ -34,8 +34,10 @@ function ProdutosGerais() {
         console.log("Tentando conectar no segundo Backend...")
         try {
           const [a, b] = await Promise.all(
+          [  
             api2.get('produtos'),
             api2.get('produtos/categorias')
+          ]  
           );
           setProdutos(a.data);
           setCategoria(b.data);
