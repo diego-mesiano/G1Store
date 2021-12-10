@@ -1,5 +1,4 @@
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
 
 export const carrinhoReducer = (state, action) =>{
     
@@ -10,24 +9,24 @@ export const carrinhoReducer = (state, action) =>{
             ));
             if (!checkIfCarrinhoAlreadyExists.length){
                 Swal.fire({
-                    position: 'top-end',
+                    position: 'bottom-start',
                     icon: 'success',
                     title: 'Produto adicionado ao carrinho',
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 1000
                   })
                 return [...state, action.payload];
             }else{
                 Swal.fire({
-                    position: 'top-end',
+                    position: 'bottom-start',
                     icon: 'error',
-                    title: 'Produto ja se encontra no carrinho',
+                    title: 'Produto ja adicionado ao carrinho',
                     showConfirmButton: false,
-                    timer: 1500
+                    timer: 1000
                   })
             }
-            
             return state;
+        
         default:
             return state;
     }

@@ -4,7 +4,7 @@ import {CarrinhoContext} from '../../contexts/CarrinhoContext';
 
 function CarrinhoMain(){
     const {produtosCarrinho} = useContext(CarrinhoContext)
-    var soma = 0;
+    
     
     
  return(
@@ -21,11 +21,7 @@ function CarrinhoMain(){
                    </>
                )
            })
-        }
-                <>
-                <p>{soma}</p>
-                </>
-        {
+        
             
                 
                     

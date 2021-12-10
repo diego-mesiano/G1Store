@@ -1,6 +1,5 @@
 import './style.scss';
-import integrantes from './integrantes.json';
-import { Card, Button  } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 
 function SobreNosMain() {

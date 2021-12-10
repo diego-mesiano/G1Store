@@ -1,6 +1,6 @@
 import { createContext, useReducer, useEffect } from "react";
 import { carrinhoReducer } from "../reducers/carrinhoReducer";
-import Swal from 'sweetalert2'
+
 
 export const CarrinhoContext = createContext();
 
