@@ -19,12 +19,13 @@ function InformacoesCarrinho() {
 
             Swal.fire({
                 title: 'Deseja realmente limpar o carrinho?',
-                text: "You won't be able to revert this!",
+                text: "Todos os produtos serão apagados!",
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: 'Sim, quero limpar'
+                confirmButtonText: 'Sim, quero limpar',
+                cancelButtonText: 'Não'
             }).then((result) => {
                 if (result.isConfirmed) {
                     localStorage.clear()
