@@ -1,7 +1,7 @@
 import Header from '../../layout/Header';
 import SobreNosMain from '../../layout/SobreNosMain';
 import Footer from '../../layout/Footer'
-import {Helmet} from 'react-helmet'
+import {Helmet} from 'react-helmet-async'
 import './style.scss';
 
 

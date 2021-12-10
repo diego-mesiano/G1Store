@@ -5,7 +5,7 @@ import api2 from '../../services/api2';
 import { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useContext } from "react";
 
 

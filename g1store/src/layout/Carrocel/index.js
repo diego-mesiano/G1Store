@@ -18,13 +18,13 @@ function Carrocel() {
           .get("/produtos")
           .then((response) => setProdutos(response.data))
           .catch((err) => {
-            console.error("ops! ocorreu um erro" + err);
+            console.error("Ocorreu um erro no primeiro backend: " + err);
             console.log("Tentando conectar no segundo Backend...")
             api2
                 .get("/produtos")
                 .then((response2) => setProdutos(response2.data))
                 .catch((err) =>{
-                    console.error("ops! ocorreu um erro na nossa segunda opção: " + err);
+                    console.error("Ocorreu um erro no segundo backend: " + err);
                 })
             });
       }, []);

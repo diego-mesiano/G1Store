@@ -7,7 +7,7 @@ import api2 from '../../services/api2'
 import { Link } from 'react-router-dom'
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
 import { useContext } from "react";
-import {Helmet} from 'react-helmet'
+import {Helmet} from 'react-helmet-async'
 
 function ProdutosGerais() {
   const [categoria, setCategoria] = useState([]);

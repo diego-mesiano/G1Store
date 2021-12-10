@@ -2,7 +2,7 @@ import Header from '../../layout/Header';
 import Carrocel from '../../layout/Carrocel';
 import ProdutosGerais from '../../layout/ProdutosGerais';
 import Footer from '../../layout/Footer'
-import {Helmet} from "react-helmet";
+import {Helmet } from "react-helmet-async";
 import './style.scss';
 
 
@@ -11,6 +11,7 @@ const Home=()=> {
     
     return (
         <>  
+       
             <Helmet>
                 <title>G1Store | Home</title>
             </Helmet>
@@ -18,6 +19,7 @@ const Home=()=> {
             <Carrocel/>
             <ProdutosGerais/>
             <Footer/>
+              
         </>
     );
 }
