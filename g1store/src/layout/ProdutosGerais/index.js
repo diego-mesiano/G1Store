@@ -10,13 +10,15 @@ import { useContext } from "react";
 import { Helmet } from 'react-helmet-async'
 import ConversaoBRL from '../../services/CoversaoBRL';
 
+
+
 function ProdutosGerais() {
   const [categoria, setCategoria] = useState([]);
   const [produtos, setProdutos] = useState([]);
   const [categoriaMostrando, setCategoriaMostrando] = useState("Ultimos produtos cadastrados");
   const { addProduto } = useContext(CarrinhoContext)
 
-
+ 
 
   useEffect(() => {
     async function consumoApi() {

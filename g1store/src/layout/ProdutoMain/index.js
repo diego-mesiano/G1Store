@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap'
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
 import { Helmet } from 'react-helmet-async';
 import { useContext } from "react";
+import ConversaoBRL from '../../services/CoversaoBRL';
 
 
 
@@ -45,8 +46,9 @@ function ProdutoMain(props) {
         </section>
         <section className="descricao-section">
           <h2>{produto.nome}</h2>
-          <p className="h3">{produto.preco}</p>
-          
+          <p className="h3"><ConversaoBRL>{[produto.preco]}</ConversaoBRL></p>
+          <p>ou em 10x de</p>
+          <p className="h3"><ConversaoBRL>{[produto.preco/10]}</ConversaoBRL></p>
           <p>{produto.descricao}</p>
           <div className="div-botoes">
             <Button size="md" id="botoes-produto" onClick={()=>addProduto(produto)}>Adicionar Carrinho</Button>
