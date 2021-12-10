@@ -4,12 +4,23 @@
     align-items: flex-start;
     overflow: visible;
     .produtos-carrinho{
-        min-height: 755px;
+        display: flex;
+        flex-wrap: wrap;
+        margin:30px;
+        
+        .nome-prod{
+            font-size: 30px;
+        }
+        .img-prod{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
     }
     .corpo-informacoes{
         position: sticky;
-    position: -webkit-sticky;
-    top: 100px;
+        position: -webkit-sticky;
+        top: 100px;
     }
 
 }

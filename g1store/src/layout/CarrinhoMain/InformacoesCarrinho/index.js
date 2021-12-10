@@ -46,7 +46,7 @@ function InformacoesCarrinho() {
                 })
                 }
 
-                <h4>Itens: {b.length}</h4>
+                <h4>{b.length} Itens</h4>
 
                 <h4>
                     Total:
@@ -56,6 +56,14 @@ function InformacoesCarrinho() {
                         b.reduce(function (total, numero) {
                             return total + numero;
                         }, 0)
+                    }
+                    </ConversaoBRL>
+                    ou 10x 
+                    <ConversaoBRL>
+                    {
+                        b.reduce(function (total, numero) {
+                            return total + numero;
+                        }, 0) / 10
                     }
                     </ConversaoBRL>
                 </h4>
