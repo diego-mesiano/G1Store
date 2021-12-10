@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap'
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
 import { Helmet } from 'react-helmet-async';
 import { useContext } from "react";
+import ConversaoBRL from "../../services/CoversaoBRL";
 
 
 function ProdutoMain(props) {
@@ -42,9 +43,9 @@ function ProdutoMain(props) {
         <section className="imagem-section">
           <img className="imagem-produto" src={produto.imagem} alt={produto.nome} />
         </section>
-        <section className="imagem-section">
+        <section className="descricao-section">
           <h2>{produto.nome}</h2>
-          <p>R${produto.preco}</p>
+          <p class="h4">{/* <ConversaoBRL> */}{produto.preco}{/* </ConversaoBRL> */}</p>
           
           <p>{produto.descricao}</p>
           <div className="div-botoes">
