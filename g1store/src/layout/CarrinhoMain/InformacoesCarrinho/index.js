@@ -4,6 +4,7 @@ import { CarrinhoContext } from '../../../contexts/CarrinhoContext';
 import { Button } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom'
+import ConversaoBRL from '../../../services/CoversaoBRL'
 
 
 function InformacoesCarrinho() {
@@ -38,7 +39,7 @@ function InformacoesCarrinho() {
     }
     return (
         <>
-            <section>
+            <section className="informacoes-carrinho">
                 {produtosCarrinho.map((a) => {
                     if (typeof a.preco !== "undefined") { b.push(a.preco) }
                     return null
@@ -47,12 +48,16 @@ function InformacoesCarrinho() {
 
                 <h4>Itens: {b.length}</h4>
 
-                <h4>Total: R$
+                <h4>
+                    Total:
+                    <ConversaoBRL>
+                     
                     {
                         b.reduce(function (total, numero) {
                             return total + numero;
-                        }, 0).toFixed(2)
+                        }, 0)
                     }
+                    </ConversaoBRL>
                 </h4>
                 <Button variant="danger"  onClick={() =>limparLocalStorage()} disabled={b.length>0 ? false : true} >Limpar Carrinho</Button>
                 <Button variant="success" disabled>Finalizar Compra</Button>
