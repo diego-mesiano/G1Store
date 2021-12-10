@@ -1,14 +1,17 @@
+import './style.scss'
 function ConversaoBRL({children}){
     
    
     return(
        <>
-        {
+            <div className='preco-pt-brl'>
+                {
             
-            children.toLocaleString('pt-br',{style:'currency', currency:'BRL'})
+                    children.toLocaleString('pt-br',{style:'currency', currency:'BRL'})
            
 
-        }
+                }
+            </div>
        </>
 
     )
