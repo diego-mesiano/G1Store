@@ -94,15 +94,15 @@ function ProdutosGerais() {
           <h2 >Mostrando: {categoriaMostrando}</h2>
         </div>
         <div id="sessao-produtos">
-          <div /* className="sticky-top" */ id="menu-categorias">
-            <div className="sticky-top h-5 mt-5">
-              <Nav defaultActiveKey="/" bg="dark">
-                <Nav.Link href={"/produtos"}>Todos os Produtos</Nav.Link>
+          <div  id="menu-categorias">
+            <div id="caixa-categorias">
+              <Nav id="caixa-nav" defaultActiveKey="/" bg="dark">
+                <Nav.Link  className="py-0 my-0" href={"/produtos"}>Todos os Produtos</Nav.Link>
                 {
                   categoria.map((categoria) => {
                     return (
 
-                      <Nav.Link key={categoria.nome} eventKey={categoria.nome} onClick={() => consumoCategoria(categoria.id)}>{categoria.nome}</Nav.Link>
+                      <Nav.Link id="categorias" key={categoria.nome} eventKey={categoria.nome} onClick={() => consumoCategoria(categoria.id)}>{categoria.nome}</Nav.Link>
 
                     )
                   })
@@ -121,7 +121,7 @@ function ProdutosGerais() {
 
                   <div key={id} >
 
-                    <Card className="card justify-content-center aling-items-center " style={{ width: '13rem' }}>
+                    <Card className="card justify-content-center aling-items-center " style={{ width: '14rem' }}>
                       <Card.Img className="img-card p-4" variant="top" src={imagem} />
                       <Card.Body  >
                         <Card.Title >{nome.substr(0, 50)}</Card.Title>
