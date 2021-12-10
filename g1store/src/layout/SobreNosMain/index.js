@@ -13,7 +13,7 @@ function SobreNosMain() {
         {
           integrantes.map(({ nome, foto, github, linkedin, bio }) => {
             return (
-              <Card className="col-3 " style={{ width: '22rem' }}>
+              <Card className="col-3 " style={{ width: '22rem' }} key={nome}>
                 <Card.Img className="pt-3" variant="top" src={`${foto}`} />
                 <Card.Body>
                   <Card.Title>{nome}</Card.Title>
