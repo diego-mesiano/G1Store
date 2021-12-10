@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "Diego Mesiano",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+    "bio": "Mora em Campinas-SP, atualmente trabalha em um restaurante como Gerente geral, já fez muita coisa na vida antes de querer ser Developer, hoje busca uma carreira Sólida e tempo livre para curtir momentos e não apenas trabalhar, viu na Tecnologia uma oportunidade de ter as duas coisas.",
     "foto":"https://media-exp1.licdn.com/dms/image/C4D03AQHVqPuwNZIoYA/profile-displayphoto-shrink_800_800/0/1627600430464?e=1644451200&v=beta&t=SYU2_FnPjuVC2d2GhFBbcNWXuyCKFfjd5rLfQr2mwwI",
     "github": "https://github.com/diego-mesiano/",
     "linkedin": "https://www.linkedin.com/in/diego-mesiano-87b680213/"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "nome": "Erik Kaiser",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+    "bio": "Mora em Canoas-RS, mostrou conhecimentos otimos em Back-End, com seu Sotaque forte e poucas palavras se dispôs ajudar todos no projeto, fazendo as parte de Back-end e ajudando em Front-end de forma excelente.",
     "foto":"https://media-exp1.licdn.com/dms/image/C4E03AQHWKb0nFpMXwQ/profile-displayphoto-shrink_800_800/0/1625524382053?e=1644451200&v=beta&t=9DbArv2_HCBoeYP5J53Ag6icTfrsdx7-cCLKrsmc2zQ",
     "github": "https://github.com/resyakKire",
     "linkedin": "https://www.linkedin.com/in/erik-kayser-b5228a212/"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "nome": "Gabriel Goak",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+    "bio": "De São Bernardo do Campo-SP, já foi garçom e hoje tem feito o curso para fazer um transição de carreira, mexe com Criptomoedas, mas apesar de fazer a mineração, tem o desejo de ser Developer e objetivo de ser um Futuro Milionário.",
     "foto":"https://media-exp1.licdn.com/dms/image/C4D03AQFuxI06h0pRAw/profile-displayphoto-shrink_800_800/0/1578342809694?e=1644451200&v=beta&t=C9Gyx3X8UE2e8OVzA4InsCc00VJO4ParRAGNN57-dvM",
     "github": "https://github.com/g-oak",
     "linkedin": "https://www.linkedin.com/in/gabr1elcarvalho/"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "nome": "Jeziel Oliveira de Paula",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+    "bio": "Tambem da cidade de Canoas-RS, o mais engraçado da turma e com um gosto músical bem ecletico, indo do funk ao Metal, mostrou conhecimentos em Back-end, aluno divertido e aplicado, adora um jogo de RPG e quer trabalhar com desenvolvimento de jogos.",
     "foto":"https://github.com/diego-mesiano/G1Store/raw/main/g1store/src/assets/img/jezi.jfif",
     "github": "https://github.com/Jeziel1Oliveira2",
     "linkedin": "https://www.linkedin.com/in/jeziel-oliveira-de-paula-21b8211b3/"
@@ -35,7 +35,7 @@
   {
     "id": 5,
     "nome": "Nicole Stefany",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+    "bio": "Mora em São Paulo-SP, ex-estudante de Pedagogia, largou os estudos em Pedagogia por depressão, ao querer voltar a estudar viu na Tecnologia familiaridades com antigos empregos que teve, ama a parte de Infraestrutura e vê na Tecnocologia uma chance de mudar de vida.",
     "foto":"https://media-exp1.licdn.com/dms/image/C4D03AQHe9_gU2W8ZzA/profile-displayphoto-shrink_800_800/0/1601911608133?e=1644451200&v=beta&t=SHniJ80MIm6MXCsLccspWH20P5QDGz0SsgA9HW2nCw8",
     "github": "https://github.com/NicoleStefany",
     "linkedin": "https://www.linkedin.com/in/nicole-stefany-da-silva-b3b73a185/"
@@ -43,7 +43,7 @@
   {
     "id": 6,
     "nome": "William Lima",
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+    "bio": "Com bastante conhecimento em Front-End junto com o Diego, sabe bastante de designer, fez a Logo da página de forma bonita combinando com as cores definidas para o projeto.",
     "foto":"https://github.com/diego-mesiano/G1Store/raw/main/g1store/src/assets/img/will.jfif",
     "github": "https://github.com/WillCrill",
     "linkedin": "https://www.linkedin.com/in/william-lima-826806216/"
