@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap'
 import {CarrinhoContext} from '../../contexts/CarrinhoContext';
 import { Helmet } from 'react-helmet-async';
 import { useContext } from "react";
-import ConversaoBRL from "../../services/CoversaoBRL";
+
 
 
 function ProdutoMain(props) {
@@ -45,7 +45,7 @@ function ProdutoMain(props) {
         </section>
         <section className="descricao-section">
           <h2>{produto.nome}</h2>
-          <p class="h3">{produto.preco}</p>
+          <p className="h3">{produto.preco}</p>
           
           <p>{produto.descricao}</p>
           <div className="div-botoes">

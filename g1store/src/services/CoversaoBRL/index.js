@@ -4,14 +4,14 @@ function ConversaoBRL({children}){
    
     return(
        <>
-            <div className='preco-pt-brl'>
+            <span className="preco-pt-brl">
                 {
             
                     children.toLocaleString('pt-br',{style:'currency', currency:'BRL'})
            
 
                 }
-            </div>
+            </span>
        </>
 
     )
