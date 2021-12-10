@@ -2,6 +2,7 @@ import { Button } from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import {CarrinhoContext} from '../../../contexts/CarrinhoContext';
 import {useContext} from "react";
+import './style.scss'
 
 const GeraCards = ({ inicio, fim, produto }) => {
     const {addProduto} = useContext(CarrinhoContext)
@@ -17,8 +18,8 @@ const GeraCards = ({ inicio, fim, produto }) => {
                         return (
 
                                 <ul key={produto.nome}>
-                                    <img src={produto.imagem} alt={produto.nome} />
-                                    <li><h3>{produto.nome}</h3></li>
+                                    <img className="imagem-carrocel" src={produto.imagem} alt={produto.nome} />
+                                    <li><h3>{produto.nome.substring(0,15)}</h3></li>
                                     <li><h6>{produto.preco}</h6></li>
                                     <li>ou 10x R${produto.preco / 10},00</li>
                                     <li>
