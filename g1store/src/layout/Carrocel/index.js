@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import api from '../../services/api';
 import api2 from '../../services/api2';
 import GeraCards from './GeraCards';
-import ConversaoBRL from '../../services/CoversaoBRL';
+import fundo from '../../assets/img/fundo.jpg'
 
 
 function Carrocel() {
@@ -38,14 +38,14 @@ function Carrocel() {
         <>
 
             <div  className="d-block w-100 mt-3" id="div-carrocel">
-                <Carousel /* fade */ variant="light" id="carrocel" className="d-block w-100">
+                <Carousel /* fade */ variant="dark" id="carrocel" className="d-block w-100">
 
                     <Carousel.Item  interval={3000}>
 
                         <img
                             id="carrocel"
                             className="d-block w-100 justify-content-center "
-                            src="https://cdn.pixabay.com/photo/2016/05/24/14/42/blue-1412469_1280.png"
+                            src={fundo}
                             alt="imagem de fundo do carrocel"
                         />
 
@@ -60,7 +60,7 @@ function Carrocel() {
                         <img
                             id="carrocel"
                             className="d-block w-100"
-                            src="https://cdn.pixabay.com/photo/2016/05/24/14/42/blue-1412469_1280.png"
+                            src={fundo}
                             alt="Second slide"
                         />
                         <Carousel.Caption >
