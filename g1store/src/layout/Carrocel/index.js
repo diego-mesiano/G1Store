@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import api from '../../services/api';
 import api2 from '../../services/api2';
 import GeraCards from './GeraCards';
+import ConversaoBRL from '../../services/CoversaoBRL';
 
 
 function Carrocel() {
