@@ -9,8 +9,25 @@
 }
 
 .descricao-projeto{
-    padding: 0px 50px;
+    h3{
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
     font-size: 20px;
     
+}
+
+#corpo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px;
+    .col-3{
+        margin-bottom: 20px;
+    }
 }

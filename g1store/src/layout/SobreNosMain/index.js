@@ -10,7 +10,7 @@ function SobreNosMain() {
     <>
       <main>
         <h2 className='titulo-equipe'>Sobre a equipe de Desenvolvimento</h2>
-        <div className="w-100 row g-3 justify-content-center my-2">
+        <div >
           <div className='descricao-projeto'>
 
             <h3>
@@ -26,7 +26,7 @@ function SobreNosMain() {
               <strong>Tecnologias Utilizadas em Infra-Estrutura:</strong> AWS ElasticBeanStalk (Deploy) | Heroku (Deploy Reserva) | AWS RDS MYSQL (Banco de Dados)
             </p>
           </div>
-
+          <div id='corpo-sobre'>
           {
             integrantes.map(({ nome, foto, github, linkedin, bio }) => {
               return (
@@ -46,6 +46,7 @@ function SobreNosMain() {
               )
             })
           }
+          </div>
         </div>
       </main>
     </>
