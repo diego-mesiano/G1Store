@@ -10,7 +10,7 @@ const GeraCards = ({ inicio, fim, produto }) => {
     
     return (
         <>
-            <h2 id="titulo carrocel">Produtos em Destaque</h2>
+            <h2 id="titulo-carrocel">Produtos em Destaque</h2>
             <div id="destaques-container">
                 {
                     

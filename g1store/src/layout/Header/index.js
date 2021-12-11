@@ -12,7 +12,7 @@ function Header() {
     <>
       <Navbar bg="light" expand="lg" sticky="top">
         <Container>
-          <Navbar.Brand href="/"><img  className="logo ms-4" src={logo} alt="Logo" width="70"/></Navbar.Brand>
+          <Navbar.Brand href="/"><img  className="logo ms-4" src={logo} alt="Logo" width="80"/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse  id="basic-navbar-nav">
             <Nav className="ms-auto">

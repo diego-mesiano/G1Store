@@ -13,7 +13,9 @@ function CarrinhoMain() {
 
     return (
         <>
+            <h2 className='titulo-carrinho'>Carrinho</h2>
             <main className='corpo-carrinho'>
+                
                 <section className='produtos-carrinho'>
                     {
                         produtosCarrinho.map((a) => {

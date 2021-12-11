@@ -93,7 +93,7 @@ function ProdutosGerais() {
       <div id="ancora-produtos" />
       <section>
         <div className="titulo-cards">
-          <h2 >Mostrando: {categoriaMostrando}</h2>
+          <h2>{categoriaMostrando}</h2>
         </div>
         <div id="sessao-produtos">
           <div  id="menu-categorias">

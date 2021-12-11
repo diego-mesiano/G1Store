@@ -2,6 +2,7 @@
     height: 55vh;
 }
 
+
 #destaques-container{
     display: flex;
     justify-content: space-around;
@@ -12,13 +13,7 @@
 }
 
 @media (max-width: 880px){
-    #div-carrocel{
-        display:none;
-        #carrocel{
-            
-        }
-
-    }
+    
 }
 
 $carousel-indicator-height: 80hv;
