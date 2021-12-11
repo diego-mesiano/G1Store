@@ -4,24 +4,40 @@
     justify-content: space-evenly;
     
     .imagem-section{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         .imagem-produto{
-            width: 60%;
-            width: 500px;
-            height: 500px;
+            width: 50vw;
+            height: 50vh;
             object-fit: contain;
             padding: 40px;
         }
     }
     .descricao-section{
-        width: 40%;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
         .div-botoes{
             #botoes-produto{
                 margin: 10px;
+                padding: 0;
             }
         }
     }
 
+}
+
+@media(max-width:780px){
+    .corpo-produto{
+        flex-direction: column;
+        .imagem-section{
+            flex-direction: row;
+            .imagem-produto{
+                width: 100%;
+            } 
+        }
+    }
 }
