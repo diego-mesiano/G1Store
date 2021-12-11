@@ -63,7 +63,7 @@ function Carrocel() {
                             src={fundo}
                             alt="Second slide"
                         />
-                        <Carousel.Caption >
+                        <Carousel.Caption id="texto-carrocel">
                             <GeraCards inicio={aleatorio2} fim={aleatorio2 + 3} produto={produtos}/>
                         </Carousel.Caption>
                     </Carousel.Item>

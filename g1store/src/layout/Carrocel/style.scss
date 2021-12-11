@@ -13,7 +13,18 @@
 }
 
 @media (max-width: 880px){
-    
+    #texto-carrocel{
+        font-size: 10px;
+        #titulo-carrocel{
+            font-size: 10px;
+        }
+    }
 }
 
-$carousel-indicator-height: 80hv;
+@media(max-width:680px){
+    
+    #div-carrocel{
+        display: none;
+    }
+    
+}

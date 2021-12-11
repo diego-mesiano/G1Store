@@ -20,12 +20,12 @@ const GeraCards = ({ inicio, fim, produto }) => {
 
                                 <ul key={produto.nome}>
                                     <img className="imagem-carrocel" src={produto.imagem} alt={produto.nome} />
-                                    <li><h3>{produto.nome.substring(0,15)}</h3></li>
+                                    <li><h3 className="titulo-destaque">{produto.nome.substring(0,15)}</h3></li>
                                     <li><h6><ConversaoBRL>{produto.preco}</ConversaoBRL></h6></li>
                                     <li>ou 10x <ConversaoBRL>{produto.preco / 10}</ConversaoBRL></li>
                                     <li>
-                                        <Link to={`produtos/${produto.id}`}><Button size="md" id="botoes-produto" style={{marginRight:'10px'}}>Ver</Button></Link>
-                                        <Button size="md" id="botoes-produto" onClick={()=>addProduto(produto)}>Add Carrinho</Button>
+                                        <Link to={`produtos/${produto.id}`}><Button size="sm" id="botoes-produto" style={{marginRight:'10px'}}>Ver</Button></Link>
+                                        <Button size="sm" id="botoes-produto" onClick={()=>addProduto(produto)}>Add Carrinho</Button>
 
                                     </li>
                                 </ul>

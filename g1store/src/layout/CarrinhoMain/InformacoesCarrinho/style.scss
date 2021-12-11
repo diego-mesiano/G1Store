@@ -8,7 +8,18 @@
     flex-direction: column;
     justify-content: space-around;
     margin-right: 60px;
-    
-
-    
 }
+
+@media(max-width:730px){
+   .informacoes-carrinho{
+       padding: 0;
+       margin-right: 10px;
+   }
+}
+
+@media(max-width:540px){
+    .informacoes-carrinho{
+        padding: 0;
+        margin-right: 10px;
+    }
+ }

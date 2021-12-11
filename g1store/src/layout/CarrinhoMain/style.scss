@@ -33,3 +33,13 @@
     }
 
 }
+
+@media(max-width:540px){
+    .informacoes-carrinho{
+        padding: 0;
+        margin-right: 10px;
+    }
+    .corpo-carrinho{
+        flex-direction: column;
+    }
+ }

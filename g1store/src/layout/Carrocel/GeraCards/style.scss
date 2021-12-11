@@ -13,3 +13,48 @@
     margin-bottom: 50px;
     border-radius: 15px;
 }
+
+@media (max-width: 880px){
+    #carrocel{
+        height:45vh;
+    }
+    .imagem-carrocel{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+    .titulo-destaque{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:580px){
+    #carrocel{
+        height:35vh;
+    }
+    .imagem-carrocel{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+    .titulo-destaque{
+        margin-top: 0;
+        font-size: 10px;
+    }
+    #botoes-produto{
+        display: none;
+    }
+}
+
+@media(max-width:499px){
+    #carrocel{
+        height:0vh;
+    }
+    .carousel-control-next-icon {
+        visibility: hidden;
+    }
+    .carousel-control-prev-icon {
+        visibility: hidden;
+    }
+    
+}
